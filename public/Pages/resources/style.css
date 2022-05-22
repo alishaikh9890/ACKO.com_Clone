@@ -27,10 +27,44 @@ body {
     display: flex;
     flex-direction: column;
 }
+.jss1 h1 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.jss1 p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 4px 0px;
+    color: rgb(255, 255, 255);
+}
+.img2 img {
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    width: 270px;
+}
 @media screen and (min-width:1025px) {
     .jss1 {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .jss1 h1 {
+        color: rgb(255, 255, 255);
+    font-size: 32px;
+    line-height: 36px;
+    }
+    .jss1 p {
+        font-size: 16px;
+    line-height: 20px;
+    }
+    .img2{
+        display: flex;
+        width: 290px;
     }
 }
