@@ -1,0 +1,112 @@
+
+  body{
+    display: flex;
+    box-sizing: border-box;
+    
+}
+#menu{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    padding: 10% 1%;
+    margin-right: 1%;
+   
+}
+#menu > div{
+    margin-bottom: 500%;
+
+}
+
+
+
+
+
+
+#ghi{
+    display: grid;
+    grid-column: 1;
+    grid-row: auto;
+    width: 46%;
+    font-family: arial;
+    grid-gap: 2%;
+}
+
+#sub_ghi{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    grid-gap: 2.5%;
+    margin-bottom: 4%;
+}
+#sub_ghi img{
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+    width: 100%;
+    height: 50%;
+}
+
+#sub_ghi > div{
+    border: 1px solid gainsboro;
+    border-radius: 1vh;
+    
+
+}
+#title{
+    padding: 0.1vh 2vh;
+}
+#sub_ghi a{
+    padding:0vh 2vh ;
+}
+#title{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.777);
+}
+#sub_ghi a{
+    text-decoration: none;
+    color:rgb(87,183,233);
+    font-weight: bold;
+    font-size: 80%;
+    margin:0%
+}
+
+
+#ghi h3{
+    font-weight: 800;
+}
+#ghi_pages{
+    display: flex;
+   
+
+}
+#ghi_pages > div{
+    border: 1px solid gainsboro;
+    padding:1vh 1.5vh;
+    border-radius: 0.5vh;
+    margin-right: 1%;
+    font-weight: bold;
+}
+#ghi_pages div:first-child{
+    background-color: rgba(128, 128, 128, 0.405);
+    color: gray;
+}
+#ghi_pages div:last-child{
+    background-color: rgba(128, 128, 128, 0.405);
+    color: gray;
+}
+#ghi_pages div:nth-child(2){
+    color: purple;
+    border: 1px solid purple;
+}
+
+
+#date{
+    padding: 0vh 2vh;
+    color: gray;
+    margin-top: 0;
+    font-weight: 200;
+    font-size: smaller;
+  
+}
+
