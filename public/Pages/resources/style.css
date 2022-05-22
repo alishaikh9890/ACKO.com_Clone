@@ -2,6 +2,13 @@ body {
     margin: 0%;
     top: 0%;
 }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .main {
     border: 0;
     outline: 0;
@@ -12,21 +19,38 @@ body {
     padding: 0;
     font-family: system-ui;
 }
+
+.subscribe {
+    display: flex;
+    border-radius: 8px;
+    background: rgb(55, 200, 126);
+    color: rgb(255, 255, 255);
+    padding: 12px 32px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
 .first_box {
     width: 100%;
     display: flex;
     background: rgb(94, 39, 201);
-    padding: 36px 20px;
+    padding: 36px 0px;
     box-sizing: border-box;
     align-items: center;
     outline: 0;
     color: aliceblue;
 }
+
 .jss1 {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .jss1 h1 {
     margin: 0px;
     font-weight: 700;
@@ -34,6 +58,7 @@ body {
     line-height: 24px;
     color: rgb(255, 255, 255);
 }
+
 .jss1 p {
     font-weight: 400;
     font-size: 12px;
@@ -41,6 +66,7 @@ body {
     margin: 4px 0px;
     color: rgb(255, 255, 255);
 }
+
 .img2 img {
     box-sizing: border-box;
     padding: 0px;
@@ -48,23 +74,150 @@ body {
     margin: auto;
     width: 270px;
 }
+.second_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.second_box_left {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+}
+.second_box_left_main_top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.jss2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.jss21, .jss22, .jss23, .jss24 {
+    width: 100%;
+    display: none;
+}
+.jss21 a, .jss22 a, .jss23 a, .jss24 a {
+    text-decoration: none;
+}
+
+.jss211 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 18px;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 1;
+    gap: 20px;
+    
+    
+}
+.imga img {
+    min-width: 15px;
+    max-width: 15px;
+    height: 16px;
+    fill: rgb(255, 255, 255);
+}
+.jss211 p {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: inherit;
+    text-decoration-line: none;
+}
+
 @media screen and (min-width:1025px) {
     .jss1 {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
+
     .jss1 h1 {
         color: rgb(255, 255, 255);
-    font-size: 32px;
-    line-height: 36px;
+        font-size: 32px;
+        line-height: 36px;
     }
+
     .jss1 p {
         font-size: 16px;
-    line-height: 20px;
+        line-height: 20px;
     }
-    .img2{
+
+    .img2 {
         display: flex;
         width: 290px;
+    }
+    .second_box {
+        flex-direction: row;
+        padding: 0px 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+    .second_box_left {
+        display: flex;
+    width: 270px;
+    margin-right: 30px;
+    }
+    .second_box_left_main_top {
+        border: 1px solid rgb(200, 208, 219);
+        border-radius: 10px;
+        padding: 20px;
+        height: fit-content;
+    }
+    .jss21 {
+        display: flex;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background: rgb(241, 243, 248);
+    color: rgb(124, 71, 225);
+    }
+    .jss22, .jss23, .jss24 {
+        display: flex;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(67, 79, 90);
+    }
+    .jss211 {
+        padding: 15px 0px 15px 27px;
+        border-radius: 8px;
+        margin-bottom: 0px;
+    }
+    .imga {
+        width: 15px;
+        height: 16px;
+        background: transparent;
+        padding: 0px;
+    }
+    .imga img {
+        width: 15px;
+    height: 16px;
+    fill: rgb(72 51 112);
+    }
+    .jss211 p {
+        font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .second_box {
+        max-width: 1170px;
+        padding-bottom: 60px;
+        background-color: #ffffff;
+    }
+    .second_box_left {
+        min-width: 270px;
     }
 }
