@@ -126,6 +126,26 @@ p {
     box-sizing: border-box;
     padding-top: 20px;
 }
+.second_box_left_main_bottom {
+    width: 100%;
+    display: flex;
+    background: rgb(241, 243, 248);
+    border-radius: 10px;
+    margin-top: 30px;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 27px;
+    box-sizing: border-box;
+}
+.p4 {
+    margin: 14px 0px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(25, 36, 52);
+    text-align: center;
+}
 
 .jss2 {
     width: 100%;
@@ -305,19 +325,58 @@ p {
     -webkit-box-align: center;
     align-items: center;
 }
-.popular_articles h2 {
+.popular_articles h2, .popular_ebooks h2 {
     margin: 0px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: rgb(25, 36, 52);
 }
-.popular_articles p {
+.paragraph1 {
     margin: 0px;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: rgb(67, 79, 90);
+}
+.jss313 {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: auto;
+}
+.paragraph2 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136.02%;
+    color: rgb(125, 137, 155);
+}
+.paragraph3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(25, 36, 52);
+    margin: 12px 0px;
+}
+.dot {
+    width: 3px;
+    height: 3px;
+    background: rgb(196, 196, 196);
+    margin: 0px 8px;
+    border-radius: 50%;
+}
+.jss3111 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-right: 16px;
+    min-width: 260px;
+    max-width: 260px;
+    cursor: pointer;
 }
 
 @media screen and (min-width:1025px) {
@@ -423,6 +482,11 @@ p {
         max-width: unset;
         min-width: unset;
         padding: 0px;
+    }
+    .jss3111 {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
     }
 
     .jss312 {
