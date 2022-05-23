@@ -126,6 +126,7 @@ p {
     box-sizing: border-box;
     padding-top: 20px;
 }
+
 .second_box_left_main_bottom {
     width: 100%;
     display: flex;
@@ -138,6 +139,7 @@ p {
     padding: 20px 27px;
     box-sizing: border-box;
 }
+
 .p4 {
     margin: 14px 0px 0px;
     font-size: 16px;
@@ -265,6 +267,30 @@ p {
     box-sizing: border-box;
     margin: 0;
 }
+.jss31111 {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.jss31111 img {
+    visibility: inherit;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
 .jss311 img {
     visibility: inherit;
     inset: 0px;
@@ -280,11 +306,17 @@ p {
     min-height: 100%;
     max-height: 100%;
 }
+
 .jss312 {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
+
+#jss312 {
+    width: 140px;
+}
+
 .jss312 p {
     font-weight: 700;
     font-size: 14px;
@@ -292,25 +324,34 @@ p {
     color: rgb(25, 36, 52);
     margin: 16px 0px;
 }
+
 .jss3121 {
+    margin-top: 0%;
     margin-left: auto;
     width: fit-content;
 }
+
 .jss3121 img {
-    vertical-align: middle;
+    vertical-align: -25%;
+    padding-top: 0%;
     padding: 0;
     margin: 0;
-    font-display: swap;
     width: 18px;
-    height: 17px;
+    height: 15px;
     fill: none;
     overflow: hidden;
 }
+.p10img img {
+    width: 12px;
+    height: 14px;
+}
+
 .jss4 {
     width: 100%;
     display: flex;
     margin: 24px 0px;
 }
+
 .jss41 {
     display: flex;
     border: 1px solid rgb(67, 79, 90);
@@ -325,13 +366,16 @@ p {
     -webkit-box-align: center;
     align-items: center;
 }
-.popular_articles h2, .popular_ebooks h2 {
+
+.popular_articles h2,
+.popular_ebooks h2 {
     margin: 0px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: rgb(25, 36, 52);
 }
+
 .paragraph1 {
     margin: 0px;
     font-weight: 400;
@@ -339,6 +383,7 @@ p {
     line-height: 18px;
     color: rgb(67, 79, 90);
 }
+
 .jss313 {
     width: 100%;
     display: flex;
@@ -346,6 +391,7 @@ p {
     align-items: center;
     margin-top: auto;
 }
+
 .paragraph2 {
     margin: 0px;
     font-weight: 500;
@@ -353,6 +399,7 @@ p {
     line-height: 136.02%;
     color: rgb(125, 137, 155);
 }
+
 .paragraph3 {
     font-weight: 700;
     font-size: 16px;
@@ -360,6 +407,7 @@ p {
     color: rgb(25, 36, 52);
     margin: 12px 0px;
 }
+
 .dot {
     width: 3px;
     height: 3px;
@@ -367,6 +415,7 @@ p {
     margin: 0px 8px;
     border-radius: 50%;
 }
+
 .jss3111 {
     width: 100%;
     display: flex;
@@ -378,6 +427,7 @@ p {
     max-width: 260px;
     cursor: pointer;
 }
+
 .jss6 {
     width: 100%;
     display: flex;
@@ -388,6 +438,7 @@ p {
     overflow: auto;
     scroll-behavior: smooth;
 }
+
 .p5 {
     margin: 0px 16px 0px 0px;
     white-space: nowrap;
@@ -400,6 +451,25 @@ p {
     cursor: pointer;
     /* border-bottom: 2px solid rgb(94, 39, 201); */
 }
+
+.jss811 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid rgb(228, 234, 241);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.jss8111 {
+    width: 100%;
+    padding: 35px 35px 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 .jss8112 {
     margin: 0px;
     color: rgb(0, 145, 221);
@@ -407,17 +477,95 @@ p {
     font-size: 12px;
     line-height: 12px;
 }
-.jss81111 {
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
+
+.p8 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(25, 36, 52);
+    margin: 0px 0px 10px;
+}
+
+.jss81 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 32px 0px 50px;
+}
+
+.jss812 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 0px;
+}
+
+.jss812a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border: unset;
+    border-radius: 6px;
     box-sizing: border-box;
-    margin: 0;
 }
-.jss81111 img {
-    
+
+.jss812b {
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 170px;
+    height: 96px;
 }
+
+.jss812b img {
+    visibility: inherit;
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.jss812c {
+    width: 55%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.p9 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(25, 36, 52);
+    margin: 0px 0px 10px;
+}
+
+.p10 {
+    margin: 0px;
+    color: rgb(0, 145, 221);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .p8 {
+        font-size: 16px;
+    }
+}
+
+
 
 @media screen and (min-width:1025px) {
     .jss1 {
@@ -523,27 +671,32 @@ p {
         min-width: unset;
         padding: 0px;
     }
+
     .jss3111 {
         width: 100%;
         min-width: unset;
         max-width: unset;
     }
 
-    .jss312 {
-        flex-direction: row;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+    
+
     .jss311 img {
         width: 269px;
-    height: 151px;
-    border-radius: 6px 6px 0px 0px;
+        height: 151px;
+        border-radius: 6px 6px 0px 0px;
     }
+    .jss31111 img {
+        width: 432px;
+        height: 202px;
+        border-radius: 6px;
+    }
+
     .jss312 {
         flex-direction: row;
-        padding: 20px;
-        box-sizing: border-box;
+    padding: 20px;
+    box-sizing: border-box;
     }
+
     .jss312 p {
         margin: 0px;
     }
