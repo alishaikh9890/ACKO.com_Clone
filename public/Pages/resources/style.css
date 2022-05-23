@@ -378,6 +378,46 @@ p {
     max-width: 260px;
     cursor: pointer;
 }
+.jss6 {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(200, 208, 219);
+    margin: 0px 12px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.p5 {
+    margin: 0px 16px 0px 0px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* color: rgb(124, 71, 225); */
+    padding: 8px 10px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* border-bottom: 2px solid rgb(94, 39, 201); */
+}
+.jss8112 {
+    margin: 0px;
+    color: rgb(0, 145, 221);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+}
+.jss81111 {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+.jss81111 img {
+    
+}
 
 @media screen and (min-width:1025px) {
     .jss1 {
