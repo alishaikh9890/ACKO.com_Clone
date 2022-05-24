@@ -194,21 +194,250 @@ function load_guides() {
            <a href="#" onclick="car_insurence_guides() ">
                <p id="p52" class="p5">Car Insurence</p>
            </a>
-           <a href="#" onclick="color3()">
+           <a href="#" onclick="two_wheeler_insurence_guides()">
                <p id="p53" class="p5">Two_Wheeler Insurence</p>
            </a>
-           <a href="#" onclick="color4()">
+           <a href="#" onclick="group_health_insurence_guides()">
                <p id="p54" class="p5">Group Health Insurence</p>
            </a>
-           <a href="#" onclick="color5()">
+           <a href="#" onclick="health_insurence_guides()">
                <p id="p55" class="p5">Health Insurence</p>
            </a>
        </div>
        <div class="jss7"></div>
    </div>
    <div id ="second_box_rigth_all_guides" class="second_box_rigth_all_guides"> </div>
-   <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>`;
+   <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>
+   <div id ="second_box_rigth_two_wheeler_insurence_guides" class="second_box_rigth_two_wheeler_insurence_guides"> </div>
+   <div id ="second_box_rigth_group_health_insurence_guides" class="second_box_rigth_group_health_insurence_guides"> </div>
+   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>
+   `;
    }
+   function all_guides() {
+    color1()
+    document.getElementById("js").innerHTML = `Guids to make insurence easy`
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
+    let second_box_rigth_all_guides = document.getElementById("second_box_rigth_all_guides")
+    second_box_rigth_all_guides.innerHTML = load_all_guides() 
+    function load_all_guides() {
+        return ` <div class="jss8">
+        <h2 class="jss8h2">Popular guides</h2>
+        <div class="jss81">
+            <a href="#">
+                <div class="jss811">
+                    <div class="jss8111">
+                        <div class="jss31111">
+                            <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders (1).webp" alt="">
+                        </div>
+                        
+                        <p>Get started with Two Wheeler Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                        </p>
+                        
+                    </div>
+                </div>
+            </a>
+            <div class="jss812">
+                <a href="#">
+                    <div class="jss812a">
+                        <div class="jss812b">
+                            <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
+                        </div>
+                        <div class="jss812c">
+                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p10 jss3121 p10img">
+                                <span class="p10"> Read More 
+                                     <img src="../../Images/resources/arrow right.png" alt="">
+                                </span>                                                    
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="jss812a">
+                        <div class="jss812b">
+                            <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
+                        </div>
+                        <div class="jss812c">
+                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p10 jss3121 p10img">
+                                <span class="p10"> Read More 
+                                     <img src="../../Images/resources/arrow right.png" alt="">
+                                </span>                                                    
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="jss812a">
+                        <div class="jss812b">
+                            <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
+                        </div>
+                        <div class="jss812c">
+                            <p class="p9">Get started with Health Insurence</p>
+                                <p class="p10 jss3121 p10img">
+                                    <span class="p10"> Read More 
+                                         <img src="../../Images/resources/arrow right.png" alt="">
+                                    </span>                                                    
+                                </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="jss9"></div>
+    <div class="jss10"></div>
+</div>
+<div class="second_box_rigth_end2">
+    <h2>All guides</h2>
+    <div class="jss3">
+        
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Two Wheeler Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div class="jss311">
+                    <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>Get started with Group Health Insurence</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>`
+    }
+}
 }
 function load_articles() {
    document.getElementById("second_box_rigth").innerHTML = ``
@@ -226,20 +455,23 @@ function load_articles() {
            <a href="#" onclick="car_insurence_guides() ">
                <p id="p52" class="p5">Car Insurence</p>
            </a>
-           <a href="#" onclick="color3()">
+           <a href="#" onclick="two_wheeler_insurence_guides()">
                <p id="p53" class="p5">Two_Wheeler Insurence</p>
            </a>
-           <a href="#" onclick="color4()">
+           <a href="#" onclick="group_health_insurence_guides()">
                <p id="p54" class="p5">Group Health Insurence</p>
            </a>
-           <a href="#" onclick="color5()">
+           <a href="#" onclick="health_insurence_guides()">
                <p id="p55" class="p5">Health Insurence</p>
            </a>
        </div>
        <div class="jss7"></div>
    </div>
    <div id ="second_box_rigth_all_guides" class="second_box_rigth_all_guides"> </div>
-   <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>`
+   <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>
+   <div id ="second_box_rigth_two_wheeler_insurence_guides" class="second_box_rigth_two_wheeler_insurence_guides"> </div>
+   <div id ="second_box_rigth_group_health_insurence_guides" class="second_box_rigth_group_health_insurence_guides"> </div>
+   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>`
    }
    all_articles();
 }
@@ -278,15 +510,20 @@ function load_ebooks() {
    all_ebooks();
 }
 
-function all_guides() {
+
+function all_articles() {
     color1()
     document.getElementById("js").innerHTML = `Guids to make insurence easy`
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_all_guides = document.getElementById("second_box_rigth_all_guides")
     second_box_rigth_all_guides.innerHTML = load_all_guides() 
     function load_all_guides() {
         return ` <div class="jss8">
-        <h2 class="jss8h2">Popular guides</h2>
+        <h2 class="jss8h2">Popular articles</h2>
         <div class="jss81">
             <a href="#">
                 <div class="jss811">
@@ -720,214 +957,15 @@ function all_ebooks() {
     </div>`
     }
 }
-function all_articles() {
-    color1();
-    document.getElementById("js").innerHTML = `Checkout ebooks on insurence`
-    document.getElementById("second_box_rigth_all_ebooks").innerHTML = ``
-    let second_box_rigth_all_ebooks = document.getElementById("second_box_rigth_all_ebooks")
-    second_box_rigth_all_ebooks.innerHTML = load_all_ebooks() 
-    function load_all_ebooks() {
-        return ` <div class="jss8">
-        <h2 class="jss8h2">Popular guides</h2>
-        <div class="jss81">
-            <a href="#">
-                <div class="jss811">
-                    <div class="jss8111">
-                        <div class="jss31111">
-                            <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders (1).webp" alt="">
-                        </div>
-                        
-                        <p>Get started with Two Wheeler Insurence</p>
-                        <p class="p10 jss3121 p10img">
-                            <span class="p10"> Read More 
-                                 <img src="../../Images/resources/arrow right.png" alt="">
-                            </span>                                                    
-                        </p>
-                        
-                    </div>
-                </div>
-            </a>
-            <div class="jss812">
-                <a href="#">
-                    <div class="jss812a">
-                        <div class="jss812b">
-                            <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
-                        </div>
-                        <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
-                            <p class="p10 jss3121 p10img">
-                                <span class="p10"> Read More 
-                                     <img src="../../Images/resources/arrow right.png" alt="">
-                                </span>                                                    
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="jss812a">
-                        <div class="jss812b">
-                            <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
-                        </div>
-                        <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
-                            <p class="p10 jss3121 p10img">
-                                <span class="p10"> Read More 
-                                     <img src="../../Images/resources/arrow right.png" alt="">
-                                </span>                                                    
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="jss812a">
-                        <div class="jss812b">
-                            <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
-                        </div>
-                        <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
-                                <p class="p10 jss3121 p10img">
-                                    <span class="p10"> Read More 
-                                         <img src="../../Images/resources/arrow right.png" alt="">
-                                    </span>                                                    
-                                </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="jss9"></div>
-    <div class="jss10"></div>
-</div>
-<div class="second_box_rigth_end2">
-    <h2>All guides</h2>
-    <div class="jss3">
-        
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Two Wheeler Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>`
-    }
-}
 
 function car_insurence_guides() {
     color2()
     document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
     function load_car_insurence_guides () {
@@ -1011,6 +1049,222 @@ function car_insurence_guides() {
                 </div>
             </a>
            
+        </div>`
+    }
+}
+function two_wheeler_insurence_guides() {
+    color3()
+    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
+    let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
+    second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
+    function load_two_wheeler_insurence () {
+        return ` <h2>All guides on Two-wheeler Insurance</h2>
+        <div class="jss3">
+            
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Two Wheeler Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Group Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/effective-tips-for-funding-a-two-wheeler-purchase.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Group Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>       
+        </div>`
+    }
+}
+function group_health_insurence_guides() {
+    color4()
+    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
+    let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
+    second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
+    function load_group_health_insurence () {
+        return ` <h2>All guides on Group Health Insurance</h2>
+        <div class="jss3">
+            
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Two Wheeler Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>     
+        </div>`
+    }
+}
+function health_insurence_guides() {
+    color5()
+    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_all_guides").innerHTML = ``
+    document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
+    let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
+    second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
+    function load_health_insurence () {
+        return `<h2>All guides on Health Insurance</h2>
+        <div class="jss3">
+            
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Two Wheeler Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>     
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/Group_10259.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>     
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/top-up-super-top-up-plans-in-health-insurance.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>     
+            <a href="#">
+                <div class="jss31">
+                    <div class="jss311">
+                        <img src="../../Images/resources/corona-kavach-insurance-policy.webp" alt="">
+                    </div>
+                    <div class="jss312">
+                        <p>Get started with Health Insurence</p>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                    </div>
+                </div>
+            </a>     
         </div>`
     }
 }
