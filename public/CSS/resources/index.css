@@ -225,12 +225,13 @@ align-items: center;
 #Esub1{
     display: flex;
     padding: 0% 6%;
+   
 }
 #Esub1details p{
     font-size: 130%;
     font-weight: 500;
     color: rgb(129,96,124);
-    padding-right: 8%;
+    padding-right: 9%;
     margin-bottom: 6vh;
     margin-top: 2vh;
 }
@@ -251,7 +252,7 @@ align-items: center;
 }
 
 #Esub2{
-    padding: 7% 10%;
+    padding: 4% 10%;
 }
 
 #Esub2 h2{
@@ -333,6 +334,10 @@ text-align: center;
     grid-template-columns: repeat(3,1fr);
    
 }
+/* #Esub4details h4{
+    color: black;
+    font-size: 2.8vh;
+} */
 
 #Esub4head,#Esub5head p{
     font-size: 90%;
@@ -359,10 +364,103 @@ text-align: center;
 
 #Esub5head{
     text-align: center;
+    line-height: 2vh;
 }
 
 #Esub5details{
     display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap: 5%;
+}
+#Esub5details1{
+display: flex;
+flex-direction: column;
+}
+#Esub5details1 > img{
+    width: 100%
+}
+#Esub5details12{
+    background-color:white;
+   border-radius: 1vh;
+    width:80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    top:-10vh;
+    padding:2.5vh;
+}
+#Esub5details12 h6{
+font-size: 2vh;
+font-weight: 700;
+line-height: 3.2vh;
+margin: 10px 0px ;
+color:rgba(0, 0, 0, 0.685)
+}
+#Esub5details12 p{
+    font-size: 1.8vh;
+    margin-top: 0px;
+}
+hr{
+    margin:0;
+}
+
+#trangle{
+    border:1px solid white;
+    background-color: white;
+
+width:1.5vh;
+height: 1.5vh;
+
+transform: rotate(45deg);
+
+position: relative;
+top: -9vh;
+right: -10vh;
+}
+
+
+
+#Esub6{
+    padding: 0.5% 10%;
+}
+
+#Esub6head{
+    text-align: center;
+    
+}
+#Esub6head h3{
+    color: black;
+}
+
+#Esub4details{
+    display: grid;
     grid-template-columns: repeat(3,1fr);
    
+}
+#Esub6details h4{
+    color: black;
+    font-size: 2.8vh;
+    margin: 0;
+}
+
+#Esub6head p{
+    font-size: 90%;
+    color: gray;
+    margin-top: 1vh;
+}
+#Esub6details p{
+    font-size: 15px;
+    line-height: 2.89vh;
+}
+#Esub6details{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 4.5%;
+    justify-content: start;
+}
+
+#Esub6details > div{
+    text-align: center;
+    color: gray;
+    line-height: 4vh;
 }
