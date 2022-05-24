@@ -368,9 +368,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Two Wheeler Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -381,9 +383,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -394,9 +398,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -407,9 +413,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -420,9 +428,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -433,9 +443,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -446,9 +458,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -459,9 +473,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -472,9 +488,11 @@ function all_guides() {
                 </div>
                 <div class="jss312">
                     <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -489,16 +507,16 @@ function all_ebooks() {
     second_box_rigth_all_ebooks.innerHTML = load_all_ebooks() 
     function load_all_ebooks() {
         return ` <div class="jss8">
-        <h2 class="jss8h2">Popular guides</h2>
+        <h2 class="jss8h2">Popular ebooks</h2>
         <div class="jss81">
             <a href="#">
                 <div class="jss811">
                     <div class="jss8111">
                         <div class="jss31111">
-                            <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders (1).webp" alt="">
+                            <img src="../../Images/resources/complete-guide-to-vehicle-insurance.webp" alt="">
                         </div>
                         
-                        <p>Get started with Two Wheeler Insurence</p>
+                        <p>Complete Guide to Car Insurance Policy [E-Book]</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -512,10 +530,10 @@ function all_ebooks() {
                 <a href="#">
                     <div class="jss812a">
                         <div class="jss812b">
-                            <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
+                            <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Car Insurance Add-ons [E-Book]</p>
                             <p class="p10 jss3121 p10img">
                                 <span class="p10"> Read More 
                                      <img src="../../Images/resources/arrow right.png" alt="">
@@ -527,10 +545,10 @@ function all_ebooks() {
                 <a href="#">
                     <div class="jss812a">
                         <div class="jss812b">
-                            <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
+                            <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Creating a Rewarding Workplace Culture [E-book]</p>
                             <p class="p10 jss3121 p10img">
                                 <span class="p10"> Read More 
                                      <img src="../../Images/resources/arrow right.png" alt="">
@@ -542,10 +560,10 @@ function all_ebooks() {
                 <a href="#">
                     <div class="jss812a">
                         <div class="jss812b">
-                            <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
+                            <img src="../../Images/resources/introducing-acko-health-ebook-cover-1200-550.webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Introducing ACKO Health [E-Book]</p>
                                 <p class="p10 jss3121 p10img">
                                     <span class="p10"> Read More 
                                          <img src="../../Images/resources/arrow right.png" alt="">
@@ -561,123 +579,141 @@ function all_ebooks() {
     <div class="jss10"></div>
 </div>
 <div class="second_box_rigth_end2">
-    <h2>All guides</h2>
+    <h2>All ebooks</h2>
     <div class="jss3">
         
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/complete-guide-to-vehicle-insurance.webp" alt="">
                 </div>
-                <div class="jss312">
-                    <p>Get started with Two Wheeler Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
-                </div>
-                <div class="jss312">
-                    <p>Get started with Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                <div id = "jss312" class="jss312">
+                    <p>Complete Guide to Car Insurance Policy [E-Book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                        </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Car Insurance Add-ons [E-Book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                        </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Creating a Rewarding Workplace Culture [E-book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/introducing-acko-health-ebook-cover-1200-550.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Introducing ACKO Health [E-Book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/power-to-personalise-e-book.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Power to Personalise [E-Book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/getting-started-with-bike-insurance-ebook-cover.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Getting Started with Bike Insurance [E-book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/vehical-Insurance-terminologies-ebook-cover-1200-550.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Decoding Vehicle Insurance Terminologies [E-Book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
         <a href="#">
             <div class="jss31">
-                <div class="jss311">
-                    <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/mental-health-in-cities.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
-                    <div class="jss3121">
-                        <img src="../../Images/resources/arrow right.png" alt="">
-                    </div>
+                    <p>Mental health in cities and why It needs attention [E-book]</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="jss31">
+                <div id="jss311" class="jss311">
+                    <img src="../../Images/resources/how-to-select-health-insurance.webp" alt="">
+                </div>
+                <div class="jss312">
+                    <p>How to select health insurance</p>
+                    <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                 </div>
             </div>
         </a>
@@ -906,9 +942,11 @@ function car_insurence_guides() {
                     </div>
                     <div class="jss312">
                         <p>Get started with Two Wheeler Insurence</p>
-                        <div class="jss3121">
-                            <img src="../../Images/resources/arrow right.png" alt="">
-                        </div>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                     </div>
                 </div>
             </a>
@@ -919,9 +957,11 @@ function car_insurence_guides() {
                     </div>
                     <div class="jss312">
                         <p>Get started with Health Insurence</p>
-                        <div class="jss3121">
-                            <img src="../../Images/resources/arrow right.png" alt="">
-                        </div>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                     </div>
                 </div>
             </a>
@@ -932,9 +972,11 @@ function car_insurence_guides() {
                     </div>
                     <div class="jss312">
                         <p>Get started with Group Health Insurence</p>
-                        <div class="jss3121">
-                            <img src="../../Images/resources/arrow right.png" alt="">
-                        </div>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                     </div>
                 </div>
             </a>
@@ -945,9 +987,11 @@ function car_insurence_guides() {
                     </div>
                     <div class="jss312">
                         <p>Get started with Group Health Insurence</p>
-                        <div class="jss3121">
-                            <img src="../../Images/resources/arrow right.png" alt="">
-                        </div>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                     </div>
                 </div>
             </a>
@@ -958,9 +1002,11 @@ function car_insurence_guides() {
                     </div>
                     <div class="jss312">
                         <p>Get started with Group Health Insurence</p>
-                        <div class="jss3121">
-                            <img src="../../Images/resources/arrow right.png" alt="">
-                        </div>
+                        <p class="p10 jss3121 p10img">
+                            <span class="p10"> Read More 
+                                 <img src="../../Images/resources/arrow right.png" alt="">
+                            </span>                                                    
+                    </p>
                     </div>
                 </div>
             </a>

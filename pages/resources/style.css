@@ -687,6 +687,9 @@ h2 {
         min-width: unset;
         padding: 0px;
     }
+    #jss311 {
+        height: 130px;
+    }
 
     .jss3111 {
         width: 100%;
@@ -708,14 +711,20 @@ h2 {
     }
 
     .jss312 {
-        flex-direction: row;
+        flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
     }
 
     .jss312 p {
         margin: 0px;
+        font-size: normal;
+        font-weight: 500;
     }
+    #jss312 {
+        width: auto;
+    }
+
 }
 
 @media screen and (min-width: 1170px) {
