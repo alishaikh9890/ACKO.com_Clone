@@ -1,0 +1,12 @@
+.footerBox{
+    display:flex;
+}
+.appStore img{
+    height: 50px;
+}
+.vl {
+    border-left: 1px solid rgba(184, 184, 228, 0.755);
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
