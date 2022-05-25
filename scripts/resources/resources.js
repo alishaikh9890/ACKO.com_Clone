@@ -16,7 +16,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div  id="jss3131" class="jss312">
                              <p>Get started with Two Wheeler Insurence</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -29,7 +29,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div  id="jss3131" class="jss312">
                              <p>Get started with Health Insurence</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -42,7 +42,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div id="jss3131" class="jss312">
                              <p>Get started with Group Health Insurence</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -126,7 +126,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/complete-guide-to-vehicle-insurance.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div id="jss3131" class="jss312">
                              <p>Complete Guide to Car Insurence Policy [E-Book]</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -139,7 +139,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div id="jss3131" class="jss312">
                              <p>Car Insurence Add-ons [E-Book]</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -152,7 +152,7 @@ function load_resources() {
                          <div class="jss311">
                              <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
                          </div>
-                         <div class="jss312">
+                         <div id="jss3131" class="jss312">
                              <p>Creating a Rewarding Workplace Culture [E-Book]</p>
                              <div class="jss3121">
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -174,7 +174,7 @@ function load_resources() {
          </div>
          </div>`
      } 
-
+     colora()
 }
 function load_guides() {
    document.getElementById("second_box_rigth").innerHTML = ``
@@ -213,6 +213,7 @@ function load_guides() {
    <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>
    `;
    }
+   colorb()
    
 }
 function all_guides() {
@@ -462,7 +463,7 @@ function load_articles() {
            <a href="#" onclick="group_health_insurence_articles()">
                <p id="p54" class="p5">Group Health Insurence</p>
            </a>
-           <a href="#" onclick="health_insurence_guides()">
+           <a href="#" onclick="health_insurence_articles()">
                <p id="p55" class="p5">Health Insurence</p>
            </a>
        </div>
@@ -475,6 +476,7 @@ function load_articles() {
    <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>`
    }
    all_articles();
+   colorc()
 }
 function load_ebooks() {
    document.getElementById("second_box_rigth").innerHTML = ``
@@ -512,6 +514,7 @@ function load_ebooks() {
    <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>`
    }
    all_ebooks();
+   colord()
 }
 
 
@@ -969,7 +972,7 @@ function car_insurence_guides() {
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
     function load_car_insurence_guides () {
         return `
-        <h2>All guides on Car Insurence</h2>
+        <h2  class="jss8h2">All guides on Car Insurence</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1062,7 +1065,7 @@ function car_insurence_articles() {
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
     function load_car_insurence_guides () {
-        return `<h2>All articles</h2>
+        return `<h2 class="jss8h2">All articles</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1195,7 +1198,7 @@ function car_insurence_ebooks() {
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
     function load_car_insurence_guides () {
-        return `<h2>All ebooks</h2>
+        return `<h2 class="jss8h2">All ebooks</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1257,7 +1260,7 @@ function two_wheeler_insurence_guides() {
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
     function load_two_wheeler_insurence () {
-        return ` <h2>All guides on Two-wheeler Insurance</h2>
+        return ` <h2 class="jss8h2">All guides on Two-wheeler Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1334,7 +1337,7 @@ function two_wheeler_insurence_articles() {
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
     function load_two_wheeler_insurence () {
-        return `<h2>All articles</h2>
+        return `<h2 class="jss8h2">All articles</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1467,7 +1470,7 @@ function two_wheeler_insurence_ebooks() {
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
     function load_two_wheeler_insurence () {
-        return `<h2>All ebooks on Two-wheeler Insurance</h2>
+        return `<h2 class="jss8h2">All ebooks on Two-wheeler Insurance</h2>
         <div class="jss3">
             <a href="#">
                 <div class="jss31">
@@ -1498,7 +1501,7 @@ function group_health_insurence_guides() {
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
     function load_group_health_insurence () {
-        return ` <h2>All guides on Group Health Insurance</h2>
+        return ` <h2 class="jss8h2">All guides on Group Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1545,7 +1548,7 @@ function group_health_insurence_articles() {
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
     function load_group_health_insurence () {
-        return `<h2>All articles</h2>
+        return `<h2 class="jss8h2">All articles</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1678,7 +1681,7 @@ function group_health_insurence_ebooks() {
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
     function load_group_health_insurence () {
-        return `<h2>All ebooks on Group Health Insurance</h2>
+        return `<h2 class="jss8h2">All ebooks on Group Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1755,7 +1758,7 @@ function health_insurence_guides() {
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
     function load_health_insurence () {
-        return `<h2>All guides on Health Insurance</h2>
+        return `<h2 class="jss8h2">All guides on Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1847,7 +1850,7 @@ function health_insurence_articles() {
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
     function load_health_insurence () {
-        return `<h2>All articles</h2>
+        return `<h2 class="jss8h2">All articles</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1980,7 +1983,7 @@ function health_insurence_ebooks() {
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
     function load_health_insurence () {
-        return `<h2>All ebooks on Health Insurance</h2>
+        return `<h2 class="jss8h2">All ebooks on Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -2113,4 +2116,56 @@ function color5() {
 
     document.getElementById("p55").style.color = "rgb(124, 71, 225)"
     document.getElementById("p55").style.borderBottom = "2px solid rgb(94, 39, 201)"
+}
+function colora() {
+    document.getElementById("jss21").style.background = "rgb(241, 243, 248)"
+    document.getElementById("jss21").style.color = "rgb(124, 71, 225))"
+
+    document.getElementById("jss22").style.background = ""
+    document.getElementById("jss22").style.color = ""
+
+    document.getElementById("jss23").style.background = ""
+    document.getElementById("jss23").style.color = ""
+
+    document.getElementById("jss24").style.background = ""
+    document.getElementById("jss24").style.color = ""
+}
+function colorb() {
+    document.getElementById("jss21").style.background = ""
+    document.getElementById("jss21").style.color = ""
+
+    document.getElementById("jss22").style.background = "rgb(241, 243, 248)"
+    document.getElementById("jss22").style.color = "rgb(124, 71, 225))"
+
+    document.getElementById("jss23").style.background = ""
+    document.getElementById("jss23").style.color = ""
+
+    document.getElementById("jss24").style.background = ""
+    document.getElementById("jss24").style.color = ""
+}
+function colorc() {
+    document.getElementById("jss21").style.background = ""
+    document.getElementById("jss21").style.color = ""
+
+    document.getElementById("jss22").style.background = ""
+    document.getElementById("jss22").style.color = ""
+
+    document.getElementById("jss23").style.background = "rgb(241, 243, 248)"
+    document.getElementById("jss23").style.color = "rgb(124, 71, 225))"
+
+    document.getElementById("jss24").style.background = ""
+    document.getElementById("jss24").style.color = ""
+}
+function colord() {
+    document.getElementById("jss21").style.background = ""
+    document.getElementById("jss21").style.color = ""
+
+    document.getElementById("jss22").style.background = ""
+    document.getElementById("jss22").style.color = ""
+
+    document.getElementById("jss23").style.background = ""
+    document.getElementById("jss23").style.color = ""
+
+    document.getElementById("jss24").style.background = "rgb(241, 243, 248)"
+    document.getElementById("jss24").style.color = "rgb(124, 71, 225))"
 }

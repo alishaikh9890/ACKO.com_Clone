@@ -126,6 +126,14 @@ h2 {
     flex-direction: column;
     display: none;
 }
+.second_box_left_main {
+    position: sticky;
+    top: 2rem;
+}
+.third_box {
+    display: grid;
+    height: 900px;
+}
 
 .second_box_left_main_top {
     width: 100%;
@@ -265,6 +273,9 @@ h2 {
     max-width: 177px;
     cursor: pointer;
     height: 100%;
+}
+#jss3131 {
+    flex-direction: row;
 }
 
 .jss311 {
@@ -638,8 +649,8 @@ h2 {
         display: flex;
         border-radius: 8px;
         margin-bottom: 5px;
-        background: rgb(241, 243, 248);
-        color: rgb(124, 71, 225);
+        /* background: rgb(241, 243, 248); */
+        /* color: rgb(124, 71, 225); */
     }
 
     .jss22,
