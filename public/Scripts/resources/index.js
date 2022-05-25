@@ -199,6 +199,7 @@ document.querySelector("#ghi").append(h3,box,ghi_pages)
 
 obj.forEach(element => {
     var box1=document.createElement("div");
+    box1.setAttribute("id","box1")
  
     var img = document.createElement("img");
     img.src=element.img;
@@ -226,4 +227,51 @@ else if(a.innerText==""){
 
 }
 
+
+
+
+
+// <=========== article1 ===========>
+
+
+
+function div1(){
+    if(document.querySelector("#p1").style.display=="block"
+    ){
+        document.querySelector("#p1").style.display="none"
+        document.querySelector("#p2").style.display="none"
+        document.querySelector("#p3").style.display="none"
+    }else{
+    document.querySelector("#p1").style.display="block"
+    document.querySelector("#p2").style.display="none"
+    document.querySelector("#p3").style.display="none"
+}
+}
+
+function div2(){
+    if(document.querySelector("#p2").style.display=="block"
+    ){
+        document.querySelector("#p1").style.display="none"
+        document.querySelector("#p2").style.display="none"
+        document.querySelector("#p3").style.display="none"
+    }else{
+    document.querySelector("#p1").style.display="none"
+    document.querySelector("#p2").style.display="block"
+    document.querySelector("#p3").style.display="none"
+}
+}
+
+function div3(){
+    if(document.querySelector("#p3").style.display=="block"
+    ){
+        document.querySelector("#p1").style.display="none"
+        document.querySelector("#p2").style.display="none"
+        document.querySelector("#p3").style.display="none"
+    }else{
+    document.querySelector("#p1").style.display="none"
+    document.querySelector("#p2").style.display="none"
+    document.querySelector("#p3").style.display="block"
+}
+
+}
 
