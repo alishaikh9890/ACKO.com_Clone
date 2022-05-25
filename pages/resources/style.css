@@ -126,6 +126,14 @@ h2 {
     flex-direction: column;
     display: none;
 }
+.second_box_left_main {
+    position: sticky;
+    top: 2rem;
+}
+.third_box {
+    display: grid;
+    height: 900px;
+}
 
 .second_box_left_main_top {
     width: 100%;
@@ -216,8 +224,8 @@ h2 {
 
 .second_box_right h2 {
     margin: 0px 0px 32px;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 650;
+    font-size: 18px;
     line-height: 24px;
     color: rgb(25, 36, 52);
 }
@@ -265,6 +273,9 @@ h2 {
     max-width: 177px;
     cursor: pointer;
     height: 100%;
+}
+#jss3131 {
+    flex-direction: row;
 }
 
 .jss311 {
@@ -409,7 +420,7 @@ h2 {
 }
 
 .paragraph3 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: rgb(25, 36, 52);
@@ -503,9 +514,9 @@ h2 {
 .jss8h2 {
     padding-top: 20px;
     margin: 0px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: 400;
     color: rgb(25, 36, 52);
 }
 
@@ -568,7 +579,7 @@ h2 {
 
 .p9 {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     color: rgb(25, 36, 52);
     margin: 0px 0px 10px;
@@ -638,8 +649,8 @@ h2 {
         display: flex;
         border-radius: 8px;
         margin-bottom: 5px;
-        background: rgb(241, 243, 248);
-        color: rgb(124, 71, 225);
+        /* background: rgb(241, 243, 248); */
+        /* color: rgb(124, 71, 225); */
     }
 
     .jss22,
@@ -743,5 +754,61 @@ h2 {
 
     .second_box_left {
         min-width: 270px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .img1 {
+        display: none;
+    }
+    .jss8 {
+        display: none;
+    }
+    .jss1 {
+        padding-left: 20px;
+    }
+    .jss3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px 36px;
+    }
+    .jss31 {
+        flex-direction: column;
+        max-width: 100%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .jss311 img {
+        width: 269px;
+        height: 151px;
+        border-radius: 6px 6px 0px 0px;
+    }
+    .jss3111 {
+        max-width: 100%;
+    }
+    .jss31111 img {
+        width: 432px;
+        height: 202px;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 900px) {
+    .jss3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 750px) {
+    .jss3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .jss31111 img {
+        width: 432px;
+        height: 202px;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 550px) {
+    .jss3 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
