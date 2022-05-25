@@ -1,7 +1,7 @@
 function navbar(){
     return `
     <div id = "navBar">
-    <img src = "acko_logo.jfif" />
+    <img src = "./logo.png" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <span>Products</span>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
