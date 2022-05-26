@@ -1,0 +1,55 @@
+body{
+    margin: 0%;
+}
+#navBar{
+background-color: rgb(94, 39, 201);
+color:white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+height: 80px;
+}
+#navBar img{
+    background-color: rgb(94, 39, 201);
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left: 12%;
+}
+.floatsRight{
+    float: right;
+    margin-top: 30px;
+    margin-right: 10%;
+    display: flex;
+}
+.logIn{
+    width:300px;
+    background-color:rgba(41, 6, 111, 0.29);
+    height: 35px;
+    border-radius: 7px;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+.logIn button{
+    background-color: rgba(14, 209, 14, 0.87);
+    color: white;
+    border-radius: 7px;
+    width: 80px;
+    height: 30px;
+}
+.arrow {
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 2px;
+}
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+.logIn img{
+    height: 200px;
+}
+.help{
+    margin-left: 100px;
+    margin-top: 10px;
+}
