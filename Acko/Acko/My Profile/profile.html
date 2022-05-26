@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <title>Acko | My Profile</title>
+    <style>
+        body{
+            background-color: rgba(245, 245, 245, 0.895);
+        }
+
+        #mainContent{
+            display: flex;
+            margin-top: 50px;
+            max-width: 1400px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        
+        #mainContent>#options{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 230px;
+            margin-left: 5%;
+            background-color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        #mainContent>#options>p{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #mainContent>#options>#pp1>a{
+            color: rgb(124, 71, 225);
+        }
+        #mainContent>#options>p>a{
+            text-decoration: none;
+            color:black;
+            margin-left: 10px;
+        }
+
+        #mainContent>.largeview{
+            width: 62%;
+            height:400px ;
+            background-color: white;
+            margin-left: 70px;
+            border-radius: 10px;
+            padding: 10px;
+            padding-left: 50px ;
+            color: rgba(40, 35, 35, 0.824);
+        }
+        #mainContent>.largeview>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 1px solid rgba(40, 35, 35, 0.824);
+        }
+        #mainContent>.largeview>div>div{
+            display: flex;
+        }
+        #mainContent>.largeview>div>div>p{
+            display: flex;
+            margin-right: 10px;
+        }
+
+        #mainContent>.container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+            width: 450px;
+            height: 350px;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            border-radius: 20px;
+            background-color: white;
+            padding:20px;
+        }
+        #mainContent>.container>div{
+            display: flex;
+            font-size: 12px;
+            color: rgb(101, 101, 101);
+            padding: 5px;
+            padding-right: 100px;
+            background-color: rgba(191, 131, 247, 0.333);
+            border-radius: 10px;
+            margin-bottom: 60px;
+        }
+        #mainContent>.container>div>img{
+            margin-right: 10px;
+        }
+        #mainContent>.container>input{
+            width: 95%;
+            height: 30px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0.5px solid rgb(154, 150, 150);
+            margin: auto;
+            margin-top: -20px;
+        }
+        #mainContent>.container>button{
+            width: 100px;
+            height: 40px;
+            font-size: 18px;
+            border: 0.3px solid;
+            border-radius: 7px;
+            margin-bottom: 5px;
+        }
+
+        #overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .active{
+            opacity: 1;
+            background-color: rgb(0, 0, 0, 0.5);
+            pointer-events: all;
+        }
+
+        @media all and (max-width:800px){
+        #mainContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #mainContent>#options{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        #mainContent>.largeview{
+            width: 90%;
+            margin-top: 10px;
+            margin-left: 6%;
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+        }
+        
+
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginNav">
+        <img src="../Login/logo/acko_logo.jfif">
+        <a>Help</a>
+    </div>
+
+    <div id="mainContent">
+        <div id="options">
+            <p id="pp1"><img src="https://container-app.ackoassets.com/am/myaccount_frontend/032f4d7efb2b10e4f7261c934f4b2f39.svg"><a href="">Personal Details</a></p>
+            <p id="pp2"><img src="https://container-app.ackoassets.com/am/myaccount_frontend/9449cc3c1c1bb4e4787e84284d184aa4.svg"><a href="">Add Payout preference</a></p>
+            <p id="pp3"><img src="https://container-app.ackoassets.com/am/myaccount_frontend/485dd98f70369e83c1ab21befb73a1b0.svg"> <a href="">Saved Cards</a></p>
+            <p id="pp4"><img src="https://container-app.ackoassets.com/am/myaccount_frontend/7230f94614c39773d7d3609073dd6e97.svg"><a href="">WhatsApp preference</a></p>
+        </div>
+
+        <!-- <div id="container" class="container">
+            <h3>Edit Names</h3>
+            <div><img src="https://container-app.ackoassets.com/am/myaccount_frontend/bf7e30d3c47c342d3e0027b0b6c00831.svg">
+                <p>To change the policyholder name for a policy, please edit the same through My Policies using Edit Policy option.</p>
+             </div>
+            <input type="text">
+            <input type="text">
+            <button>Save</button>
+        </div>
+        <div id="overlay"></div> -->
+
+        <div class="largeview">
+            <h3>Personal Details</h3>
+            <div>Name
+                <div><p id="p1">__</p><img src="https://container-app.ackoassets.com/am/myaccount_frontend/79b36efdd496b9748eb509ba067e70b2.svg" id="editImage1" onclick="func1()"></div>
+                </div>
+            <div>Phone Number
+                <div><p id="p2">__</p><img src="https://container-app.ackoassets.com/am/myaccount_frontend/79b36efdd496b9748eb509ba067e70b2.svg"  id="editImage2" onclick="func2()"></div>
+                </div>
+            <div>Email
+                <div><p id="p3">__</p><img src="https://container-app.ackoassets.com/am/myaccount_frontend/79b36efdd496b9748eb509ba067e70b2.svg" id="editImage3" onclick="func3()"></div>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    async function func(){
+        let res = await fetch(`http://localhost:3000/users`);
+        let data = await res.json();
+
+        data.forEach(userData => {
+            if(userData.isLogin == true){
+                if(userData.first_name != "" && userData.last_name != ""){
+                    document.getElementById("p1").innerText = ""
+                    document.getElementById("p1").innerText = userData.first_name + " " + userData.last_name;
+                }
+
+                if(userData.number != ""){
+                    document.getElementById("p2").innerText = ""
+                    document.getElementById("p2").innerText = userData.number;
+                }
+
+                if(userData.email != ""){
+                    document.getElementById("p3").innerText = ""
+                    document.getElementById("p3").innerText = userData.number
+                }
+            }
+        });
+    }
+    func()
+
+    function func1(){
+        
+    }
+</script>
+</html>
