@@ -1,12 +1,12 @@
 load_resources();
 function load_resources() {
-    document.getElementById("second_box_rigth").innerHTML = `` 
-    document.getElementById("js").innerHTML = `Become an expert on insurence`
-    document.getElementById("js1").innerHTML = `Subscribe to get curated insurence content in your box`
-  let second_box_rigth =  document.getElementById("second_box_rigth") 
-     second_box_rigth.innerHTML = load_data() 
-     function load_data() {
-         return `<h2>All Resources</h2>
+    document.getElementById("second_box_rigth").innerHTML = ``
+    document.getElementById("js").innerHTML = `Become an expert on Insurance`
+    document.getElementById("js1").innerHTML = `Subscribe to get curated insurance content in your box`
+    let second_box_rigth = document.getElementById("second_box_rigth")
+    second_box_rigth.innerHTML = load_data()
+    function load_data() {
+        return `<h2>All Resources</h2>
          <div class="line"></div>
          <div class="popular_guides">
              <h2>Popular guides</h2>
@@ -172,60 +172,71 @@ function load_resources() {
                  </a>
              </div>
          </div>
-         </div>`
-     } 
-     colora()
+         </div>
+         <div class="other_pages">
+    <div class="left jss5"><</div>
+    <div class="list jss5">1</div>
+    <div class="right jss5">></div>
+    </div>`
+    }
+    colora()
 }
 function load_guides() {
-   document.getElementById("second_box_rigth").innerHTML = ``
-   document.getElementById("js").innerHTML = `Guids to make insurence easy`
-    document.getElementById("js1").innerHTML = `Subscribe to get curated insurence content in your box`
-   let second_box_rigth = document.getElementById("second_box_rigth")
-   second_box_rigth.innerHTML = loadguides() 
-   all_guides();
-   color1();
-   function loadguides(){
-       return ` <div class="second_box_rigth_top2">
-       <div class="jss5"></div>
+    document.getElementById("second_box_rigth").innerHTML = ``
+    document.getElementById("js").innerHTML = `Guides to make Insurance easy`
+    document.getElementById("js1").innerHTML = `Subscribe to get curated insurance content in your box`
+    let second_box_rigth = document.getElementById("second_box_rigth")
+    second_box_rigth.innerHTML = loadguides()
+    all_guides();
+    color1();
+    function loadguides() {
+        return ` <div class="second_box_rigth_top2">
+       <div class="jss5"><</div>
        <div class="jss6">
            <a href="#" onclick="all_guides()">
                <p id="p51" class="p5">ALL</p>
            </a>
            <a href="#" onclick="car_insurence_guides() ">
-               <p id="p52" class="p5">Car Insurence</p>
+               <p id="p52" class="p5">Car insurance</p>
            </a>
            <a href="#" onclick="two_wheeler_insurence_guides()">
-               <p id="p53" class="p5">Two_Wheeler Insurence</p>
+               <p id="p53" class="p5">Two Wheeler insurance</p>
            </a>
            <a href="#" onclick="group_health_insurence_guides()">
-               <p id="p54" class="p5">Group Health Insurence</p>
+               <p id="p54" class="p5">Group Health insurance</p>
            </a>
            <a href="#" onclick="health_insurence_guides()">
-               <p id="p55" class="p5">Health Insurence</p>
+               <p id="p55" class="p5">Health insurance</p>
            </a>
        </div>
-       <div class="jss7"></div>
+       <div class="jss7">></div>
    </div>
    <div id ="second_box_rigth_all_guides" class="second_box_rigth_all_guides"> </div>
    <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>
    <div id ="second_box_rigth_two_wheeler_insurence_guides" class="second_box_rigth_two_wheeler_insurence_guides"> </div>
    <div id ="second_box_rigth_group_health_insurence_guides" class="second_box_rigth_group_health_insurence_guides"> </div>
    <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>
+   <div class="other_pages">
+    <div class="left jss5"><</div>
+    <div class="list jss5">1</div>
+    <div class="list jss5">2</div>
+    <div class="right jss5">></div>
+</div>
    `;
-   }
-   colorb()
-   
+    }
+    colorb()
+
 }
 function all_guides() {
     color1()
-    document.getElementById("js").innerHTML = `Guids to make insurence easy`
+    document.getElementById("js").innerHTML = `Guides to make Insurance easy`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_all_guides = document.getElementById("second_box_rigth_all_guides")
-    second_box_rigth_all_guides.innerHTML = load_all_guides() 
+    second_box_rigth_all_guides.innerHTML = load_all_guides()
     function load_all_guides() {
         return ` <div class="jss8">
         <h2 class="jss8h2">Popular guides</h2>
@@ -438,99 +449,112 @@ function all_guides() {
                 </div>
             </div>
         </a>
-    </div>`
+    </div>
+    `
     }
 }
 function load_articles() {
-   document.getElementById("second_box_rigth").innerHTML = ``
-   document.getElementById("js1").innerHTML = `Subscribe to get curated insurence content in your box`
-   document.getElementById("js").innerHTML = `Articles to make insurence easy`
-   let second_box_rigth = document.getElementById("second_box_rigth")
-   second_box_rigth.innerHTML = loadarticles() 
-   function loadarticles() {
-       return `<div class="second_box_rigth_top2">
-       <div class="jss5"></div>
+    document.getElementById("second_box_rigth").innerHTML = ``
+    document.getElementById("js").innerHTML = `Articles to make Insurance easy`
+    document.getElementById("js1").innerHTML = `Subscribe to get curated insurance content in your box`
+    let second_box_rigth = document.getElementById("second_box_rigth")
+    second_box_rigth.innerHTML = loadarticles()
+    function loadarticles() {
+        return `<div class="second_box_rigth_top2">
+       <div class="jss5"><</div>
        <div class="jss6">
            <a href="#" onclick="all_articles()">
                <p id="p51" class="p5">ALL</p>
            </a>
            <a href="#" onclick="car_insurence_articles() ">
-               <p id="p52" class="p5">Car Insurence</p>
+               <p id="p52" class="p5">Car Insurance</p>
            </a>
            <a href="#" onclick="two_wheeler_insurence_articles()">
-               <p id="p53" class="p5">Two_Wheeler Insurence</p>
+               <p id="p53" class="p5">Two_Wheeler Insurance</p>
            </a>
            <a href="#" onclick="group_health_insurence_articles()">
-               <p id="p54" class="p5">Group Health Insurence</p>
+               <p id="p54" class="p5">Group Health Insurance</p>
            </a>
            <a href="#" onclick="health_insurence_articles()">
-               <p id="p55" class="p5">Health Insurence</p>
+               <p id="p55" class="p5">Health Insurance</p>
            </a>
        </div>
-       <div class="jss7"></div>
+       <div class="jss7">></div>
    </div>
    <div id ="second_box_rigth_all_guides" class="second_box_rigth_all_guides"> </div>
    <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>
    <div id ="second_box_rigth_two_wheeler_insurence_guides" class="second_box_rigth_two_wheeler_insurence_guides"> </div>
    <div id ="second_box_rigth_group_health_insurence_guides" class="second_box_rigth_group_health_insurence_guides"> </div>
-   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>`
-   }
-   all_articles();
-   colorc()
+   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>
+   <div class="other_pages">
+    <div class="left jss5"><</div>
+    <div class="list jss5">1</div>
+    <div class="list jss5">2</div>
+    <div class="list jss5">3</div>
+    <div class="right jss5">></div>
+</div>`
+    }
+    all_articles();
+    colorc()
 }
 function load_ebooks() {
-   document.getElementById("second_box_rigth").innerHTML = ``
-   document.getElementById("js").innerHTML = `Ebooks`
-   document.getElementById("js1").innerHTML = `Checkout ebooks on insurence`
-   let second_box_rigth = document.getElementById("second_box_rigth")
-   
-   second_box_rigth.innerHTML = loadebooks() 
-   function loadebooks() {
-       return `<div class="second_box_rigth_top2">
-       <div class="jss5"></div>
+    document.getElementById("second_box_rigth").innerHTML = ``
+    document.getElementById("js").innerHTML = `Ebooks`
+    document.getElementById("js1").innerHTML = `Checkout ebooks on Insurance`
+    let second_box_rigth = document.getElementById("second_box_rigth")
+
+    second_box_rigth.innerHTML = loadebooks()
+    function loadebooks() {
+        return `<div class="second_box_rigth_top2">
+       <div class="jss5"><</div>
        <div class="jss6">
            <a href="#" onclick="all_ebooks()">
                <p id="p51" class="p5">ALL</p>
            </a>
            <a href="#" onclick="car_insurence_ebooks() ">
-               <p id="p52" class="p5">Car Insurence</p>
+               <p id="p52" class="p5">Car Insurance</p>
            </a>
            <a href="#" onclick="two_wheeler_insurence_ebooks()">
-               <p id="p53" class="p5">Two_Wheeler Insurence</p>
+               <p id="p53" class="p5">Two_Wheeler Insurance</p>
            </a>
            <a href="#" onclick="group_health_insurence_ebooks()">
-               <p id="p54" class="p5">Group Health Insurence</p>
+               <p id="p54" class="p5">Group Health Insurance</p>
            </a>
            <a href="#" onclick="health_insurence_ebooks()">
-               <p id="p55" class="p5">Health Insurence</p>
+               <p id="p55" class="p5">Health Insurance</p>
            </a>
        </div>
-       <div class="jss7"></div>
+       <div class="jss7">></div>
    </div>
    <div id ="second_box_rigth_all_guides" class="second_box_rigth_all_guides"> </div>
    <div id ="second_box_rigth_car_insurence_guides" class="second_box_rigth_car_insurence_guides"> </div>
    <div id ="second_box_rigth_two_wheeler_insurence_guides" class="second_box_rigth_two_wheeler_insurence_guides"> </div>
    <div id ="second_box_rigth_group_health_insurence_guides" class="second_box_rigth_group_health_insurence_guides"> </div>
-   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>`
-   }
-   all_ebooks();
-   colord()
+   <div id ="second_box_rigth_health_insurence_guides" class="second_box_rigth_health_insurence_guides"> </div>
+   <div class="other_pages">
+    <div class="left jss5"><</div>
+    <div class="list jss5">1</div>
+    <div class="right jss5">></div>
+</div>`
+    }
+    all_ebooks();
+    colord()
 }
 
 
 function all_articles() {
     color1()
-    document.getElementById("js").innerHTML = `Guids to make insurence easy`
+    document.getElementById("js").innerHTML = `Articles to make Insurance easy`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_all_guides = document.getElementById("second_box_rigth_all_guides")
-    second_box_rigth_all_guides.innerHTML = load_all_guides() 
+    second_box_rigth_all_guides.innerHTML = load_all_guides()
     function load_all_guides() {
         return `<div class="jss8">
-        <h2 class="jss8h2">Popular articles</h2>
+        <h2 class="jss8h2">Popular Articles</h2>
         <div class="jss81">
             <a href="#">
                 <div class="jss811">
@@ -613,7 +637,7 @@ function all_articles() {
     <div class="jss10"></div>
 </div>
 <div class="second_box_rigth_end2">
-    <h2>All articles</h2>
+    <h2>All Articles</h2>
     <div class="jss3">
     <a href="#">
         <div class="jss3111">
@@ -737,14 +761,15 @@ function all_articles() {
 }
 function all_ebooks() {
     color1()
-    document.getElementById("js").innerHTML = `Guids to make insurence easy`
+    document.getElementById("js").innerHTML = `Ebooks`
+    document.getElementById("js1").innerHTML = `Checkout ebooks on Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_all_guides = document.getElementById("second_box_rigth_all_guides")
-    second_box_rigth_all_guides.innerHTML = load_all_ebooks() 
+    second_box_rigth_all_guides.innerHTML = load_all_ebooks()
     function load_all_ebooks() {
         return ` <div class="jss8">
         <h2 class="jss8h2">Popular ebooks</h2>
@@ -962,7 +987,7 @@ function all_ebooks() {
 }
 function car_insurence_guides() {
     color2()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Guides on Car Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -970,9 +995,9 @@ function car_insurence_guides() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
-    function load_car_insurence_guides () {
+    function load_car_insurence_guides() {
         return `
-        <h2  class="jss8h2">All guides on Car Insurence</h2>
+        <h2  class="jss8h2">All Guides on Car Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -981,7 +1006,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Two Wheeler Insurence</p>
+                        <p>Get started with Two Wheeler Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -996,7 +1021,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>Get started with Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1011,7 +1036,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/roadside-assistance-in-car-insurance.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurence</p>
+                        <p>Get started with Group Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1026,7 +1051,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/car-insurance-with-budgeted-premiums.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurence</p>
+                        <p>Get started with Group Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1041,7 +1066,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/car-insurance-claim-for-cyclone-damages.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurence</p>
+                        <p>Get started with Group Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1056,7 +1081,7 @@ function car_insurence_guides() {
 }
 function car_insurence_articles() {
     color2()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Articles on Car insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1064,8 +1089,8 @@ function car_insurence_articles() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
-    function load_car_insurence_guides () {
-        return `<h2 class="jss8h2">All articles</h2>
+    function load_car_insurence_guides() {
+        return `<h2 class="jss8h2">All articles on Car Insurance</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1189,7 +1214,7 @@ function car_insurence_articles() {
 }
 function car_insurence_ebooks() {
     color2()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Car Insurance Ebooks`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1197,8 +1222,8 @@ function car_insurence_ebooks() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_car_insurence_guides = document.getElementById("second_box_rigth_car_insurence_guides")
     second_box_rigth_car_insurence_guides.innerHTML = load_car_insurence_guides()
-    function load_car_insurence_guides () {
-        return `<h2 class="jss8h2">All ebooks</h2>
+    function load_car_insurence_guides() {
+        return `<h2 class="jss8h2">All ebooks on Car Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1251,7 +1276,7 @@ function car_insurence_ebooks() {
 }
 function two_wheeler_insurence_guides() {
     color3()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Guides on Two-wheeler Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1259,8 +1284,8 @@ function two_wheeler_insurence_guides() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
-    function load_two_wheeler_insurence () {
-        return ` <h2 class="jss8h2">All guides on Two-wheeler Insurance</h2>
+    function load_two_wheeler_insurence() {
+        return ` <h2 class="jss8h2">All Guides on Two-wheeler Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1328,7 +1353,7 @@ function two_wheeler_insurence_guides() {
 }
 function two_wheeler_insurence_articles() {
     color3()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Articles on Two-wheeler Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1336,8 +1361,8 @@ function two_wheeler_insurence_articles() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
-    function load_two_wheeler_insurence () {
-        return `<h2 class="jss8h2">All articles</h2>
+    function load_two_wheeler_insurence() {
+        return `<h2 class="jss8h2">All articles on Two-wheeler Insurance</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1461,7 +1486,7 @@ function two_wheeler_insurence_articles() {
 }
 function two_wheeler_insurence_ebooks() {
     color3()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Two-wheeler Insurence Ebooks`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1469,7 +1494,7 @@ function two_wheeler_insurence_ebooks() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_two_wheeler_insurence_guides = document.getElementById("second_box_rigth_two_wheeler_insurence_guides")
     second_box_rigth_two_wheeler_insurence_guides.innerHTML = load_two_wheeler_insurence()
-    function load_two_wheeler_insurence () {
+    function load_two_wheeler_insurence() {
         return `<h2 class="jss8h2">All ebooks on Two-wheeler Insurance</h2>
         <div class="jss3">
             <a href="#">
@@ -1492,7 +1517,7 @@ function two_wheeler_insurence_ebooks() {
 }
 function group_health_insurence_guides() {
     color4()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Guides on Group Health Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1500,8 +1525,8 @@ function group_health_insurence_guides() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
-    function load_group_health_insurence () {
-        return ` <h2 class="jss8h2">All guides on Group Health Insurance</h2>
+    function load_group_health_insurence() {
+        return ` <h2 class="jss8h2">All Guides on Group Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1539,7 +1564,7 @@ function group_health_insurence_guides() {
 }
 function group_health_insurence_articles() {
     color4()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Articles on Group Health Insurance`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1547,8 +1572,8 @@ function group_health_insurence_articles() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
-    function load_group_health_insurence () {
-        return `<h2 class="jss8h2">All articles</h2>
+    function load_group_health_insurence() {
+        return `<h2 class="jss8h2">All articles on Group Health Insurance</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1672,7 +1697,7 @@ function group_health_insurence_articles() {
 }
 function group_health_insurence_ebooks() {
     color4()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Group Health Insurance Ebooks`
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_all_guides").innerHTML = ``
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
@@ -1680,7 +1705,7 @@ function group_health_insurence_ebooks() {
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     let second_box_rigth_group_health_insurence_guides = document.getElementById("second_box_rigth_group_health_insurence_guides")
     second_box_rigth_group_health_insurence_guides.innerHTML = load_group_health_insurence()
-    function load_group_health_insurence () {
+    function load_group_health_insurence() {
         return `<h2 class="jss8h2">All ebooks on Group Health Insurance</h2>
         <div class="jss3">
             
@@ -1749,7 +1774,7 @@ function group_health_insurence_ebooks() {
 }
 function health_insurence_guides() {
     color5()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Guides on Health Insurance`
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
@@ -1757,8 +1782,8 @@ function health_insurence_guides() {
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
-    function load_health_insurence () {
-        return `<h2 class="jss8h2">All guides on Health Insurance</h2>
+    function load_health_insurence() {
+        return `<h2 class="jss8h2">All Guides on Health Insurance</h2>
         <div class="jss3">
             
             <a href="#">
@@ -1841,7 +1866,7 @@ function health_insurence_guides() {
 }
 function health_insurence_articles() {
     color5()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Articles on Health Insurance`
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
@@ -1849,8 +1874,8 @@ function health_insurence_articles() {
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
-    function load_health_insurence () {
-        return `<h2 class="jss8h2">All articles</h2>
+    function load_health_insurence() {
+        return `<h2 class="jss8h2">All articles on Health Insurance</h2>
         <div class="jss3">
         <a href="#">
             <div class="jss3111">
@@ -1974,7 +1999,7 @@ function health_insurence_articles() {
 }
 function health_insurence_ebooks() {
     color5()
-    document.getElementById("js").innerHTML = `Guids on Car Insurence`
+    document.getElementById("js").innerHTML = `Health Insurence Ebooks`
     document.getElementById("second_box_rigth_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_group_health_insurence_guides").innerHTML = ``
     document.getElementById("second_box_rigth_two_wheeler_insurence_guides").innerHTML = ``
@@ -1982,7 +2007,7 @@ function health_insurence_ebooks() {
     document.getElementById("second_box_rigth_car_insurence_guides").innerHTML = ``
     let second_box_rigth_health_insurence_guides = document.getElementById("second_box_rigth_health_insurence_guides")
     second_box_rigth_health_insurence_guides.innerHTML = load_health_insurence()
-    function load_health_insurence () {
+    function load_health_insurence() {
         return `<h2 class="jss8h2">All ebooks on Health Insurance</h2>
         <div class="jss3">
             
@@ -2035,7 +2060,7 @@ function health_insurence_ebooks() {
     }
 }
 function color1() {
-console.log(document.getElementById("p51"))
+    console.log(document.getElementById("p51"))
     document.getElementById("p51").style.color = "rgb(124, 71, 225)"
     document.getElementById("p51").style.borderBottom = "2px solid rgb(94, 39, 201)"
 
