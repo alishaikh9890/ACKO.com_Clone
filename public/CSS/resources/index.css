@@ -1,0 +1,781 @@
+
+  #body{
+    display: flex;
+    box-sizing: border-box;
+    
+}
+#menu{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    padding: 10% 1%;
+    margin-right: 1%;
+   
+}
+#menu > div{
+    margin-bottom: 500%;
+
+}
+
+#ghi{
+    display: grid;
+    grid-column: 1;
+    grid-row: auto;
+    width: 55%;
+    font-family: arial;
+    grid-gap: 2%;
+}
+
+#sub_ghi{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    grid-gap: 3%;
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+    
+}
+
+#sub_ghi img{
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+    width: 100%;
+    height: 50%;
+}
+
+#sub_ghi > div{
+    border: 1px solid gainsboro;
+    border-radius: 1vh;
+   padding-bottom: 3vh;
+}
+#title{
+    padding: 0.1vh 2vh;
+}
+#sub_ghi a{
+    padding:0vh 2vh ;
+}
+#title{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.777);
+}
+#sub_ghi a{
+    text-decoration: none;
+    color:rgb(87,183,233);
+    font-weight: bold;
+    font-size: 80%;
+    margin:0%
+}
+
+
+#ghi h3{
+    font-weight: 800;
+}
+#ghi_pages{
+    display: flex;
+   
+
+}
+#ghi_pages > div{
+    border: 1px solid gainsboro;
+    padding:1vh 1.5vh;
+    border-radius: 0.5vh;
+    margin-right: 1%;
+    font-weight: bold;
+}
+#ghi_pages div:first-child{
+    background-color: rgba(128, 128, 128, 0.405);
+    color: gray;
+}
+#ghi_pages div:last-child{
+    background-color: rgba(128, 128, 128, 0.405);
+    color: gray;
+}
+#ghi_pages div:nth-child(2){
+    color: purple;
+    border: 1px solid purple;
+}
+
+
+#date{
+    padding: 0vh 2vh;
+    color: gray;
+    margin-top: 0;
+    font-weight: 200;
+    font-size: smaller;
+  
+}
+
+
+
+/* <------------ E BOOKS -------------> */
+
+
+
+#Enav{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+  
+    font-size: 2vh;
+    font-weight: 600;
+    font-family: arial;
+    width: 100%;
+    border: 1px solid gainsboro;
+    display: flex;
+    padding: 0.5% 6%;
+
+    
+}
+#Enav > div{
+    padding:1vh 0vh;
+    width: 50%;
+  
+}
+#Enav1{
+    display: flex;
+align-items: center;
+   
+    flex-direction: row;
+}
+#Enav1 > div{
+    width: 10%;
+    height: fit-content;
+
+    margin-right: 8%;
+}
+#Enav img{
+    width: 110%;
+}
+#Enav2{
+    display: flex;  
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+.Enav2 > div{
+  
+    height: fit-content;
+    width: 10%;
+  
+    margin-left: 6%;
+}
+#Enav2-1{
+  border-radius: 1vh;
+  align-items: center;
+    background-color: rgba(220, 220, 220, 0.694);
+    display: flex;
+    width: 50%;
+    padding: 1%;
+
+}
+.Enav2-1 > div{
+    height: fit-content;
+
+    /* width: 50%;   */
+}
+#Enav2-1 div:first-child{
+   flex-grow: 5;
+}
+#mp{
+    flex-grow: 1;
+    background-color: rgb(55,200,126);
+    padding: 0.5vh;
+    text-align: center;
+    border-radius: 1vh;
+}
+#Enav2 div:first-child{
+    width: 5%
+}
+#resp{
+    display: none;
+}
+#logo{
+    display: none;
+}
+
+#claim{
+    display: flex;
+    align-items: center;
+
+}
+#claim div{
+
+    height: fit-content;
+    font-size: 12px;
+}
+
+
+
+
+
+
+#Emain{
+    font-family: system-ui;
+    
+}
+#eaddress{
+    padding: 1.5% 6%;
+    display: flex;
+    font-size: 2vh;
+    color: gray;
+}
+#eaddress a{
+    margin: 0px 2px;
+}
+
+#Esub1{
+    display: flex;
+    padding: 0% 6%;
+   
+}
+#Esub1details p{
+    font-size: 130%;
+    font-weight: 500;
+    color: rgb(129,96,124);
+    padding-right: 9%;
+    margin-bottom: 6vh;
+    margin-top: 2vh;
+}
+#Esub1details h1{
+    font-size: 170%;
+    margin-bottom: 0px;
+    color: rgb(65,74,83);
+    font-weight: 750;  
+}
+#Esub1details button{
+    padding: 2.5vh;
+    border-radius: 1.5vh;
+    border: none;
+    background-color: rgb(68,203,134);
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+#Esub2{
+    padding: 4% 10%;
+}
+
+#Esub2 h2{
+    color: rgb(65,74,83);
+text-align: center;
+}
+
+#sub2details{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 4.5%;
+    margin-top: 8%;
+    justify-content: start;
+}
+
+#sub2details > div{
+    color: gray;
+    line-height: 4vh;
+}
+
+#Esub3{
+    text-align: center;
+    background-color: rgb(246,247,251);
+    padding:5%;
+    margin: 0;
+}
+#Esub3 h2{
+    color:rgb(65,74,83);
+
+}
+#Esub3details{
+    background-color: white;
+    margin: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+#Esub3details > div{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+#Esub3details1{
+    text-align: start;
+    margin-left:18%;
+    margin-right: 5%;
+}
+#Esub3details1 h3{
+    font-weight: 700;
+    font-size: 3.5vh;
+}
+#Esub3details1 p{
+    color: gray;
+    line-height: 4vh;
+}
+#Esub3details1 button{
+    background-color: white;
+    padding: 2.5vh 4vh;
+    font-weight: 600;
+    font-size: 2.5vh;
+    border: 1px solid gray;
+    border-radius:1vh;
+    color: rgb(65,74,83);
+}
+
+#Esub4{
+    padding: 3% 10%;
+}
+
+#Esub4head{
+    text-align: center;
+    
+}
+#Esub4head h3{
+    color: black;
+}
+
+#Esub4details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+/* #Esub4details h4{
+    color: black;
+    font-size: 2.8vh;
+} */
+
+#Esub4head,#Esub5head p{
+    font-size: 90%;
+    color: gray;
+    margin-top: 1vh;
+}
+#Esub4details{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 4.5%;
+    margin-top: 8%;
+    justify-content: start;
+}
+
+#Esub4details > div{
+    color: gray;
+    line-height: 4vh;
+}
+
+
+#Esub5{
+    padding: 3% 10%;
+}
+
+#Esub5head{
+    text-align: center;
+    line-height: 2vh;
+}
+
+#Esub5details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap: 5%;
+}
+#Esub5details1{
+display: flex;
+flex-direction: column;
+}
+#Esub5details1 > img{
+    width: 100%
+}
+#Esub5details12{
+    background-color:white;
+   border-radius: 1vh;
+    width:80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    top:-10vh;
+    padding:2.5vh;
+}
+#Esub5details12 h6{
+font-size: 2vh;
+font-weight: 700;
+line-height: 3.2vh;
+margin: 10px 0px ;
+color:rgba(0, 0, 0, 0.685)
+}
+#Esub5details12 p{
+    font-size: 1.8vh;
+    margin-top: 0px;
+}
+hr{
+    margin:0;
+}
+
+#trangle{
+    border:1px solid white;
+    background-color: white;
+
+width:1.5vh;
+height: 1.5vh;
+
+transform: rotate(45deg);
+
+position: relative;
+top: -9vh;
+right: -10vh;
+}
+
+
+
+#Esub6{
+    padding: 0.5% 10%;
+}
+
+#Esub6head{
+    text-align: center;
+    
+}
+#Esub6head h3{
+    color: black;
+}
+
+#Esub4details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+#Esub6details h4{
+    color: black;
+    font-size: 2.8vh;
+    margin: 0;
+}
+
+#Esub6head p{
+    font-size: 90%;
+    color: gray;
+    margin-top: 1vh;
+}
+#Esub6details p{
+    font-size: 15px;
+    line-height: 2.89vh;
+}
+#Esub6details{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 4.5%;
+    justify-content: start;
+}
+
+#Esub6details > div{
+    text-align: center;
+    color: gray;
+    line-height: 4vh;
+}
+
+
+/* <------------------- Article book ---------------------> */
+
+
+
+
+.Amain{
+    padding:1.5% 7%;
+    display: flex;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ 
+
+.Asub1{
+    width:66%;
+    margin-right: 4%;
+}
+.Asub1 h1{
+    font-size: 4.5vh;
+}
+.Asub1 p{
+    line-height: 5vh;
+}
+#atitle{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 3.4vh;
+}
+.Asub1 img{
+    width:100%;
+    margin-bottom: 4vh;
+}
+.Asub1 hr{
+    margin-top:2.5vh;
+    margin-bottom: 4vh;
+}
+.Asub1 ul{
+    line-height: 7vh;
+}
+.qans >div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.qans img{
+    width: 2.7vh;
+    height: 2vh;
+    margin-right: 2vh;  
+}
+.qans p{
+    display: none;
+}
+
+.qans h4{
+    margin-top:0;
+    color: rgba(0, 0, 0, 0.592);
+    font-weight: 700;
+   
+}
+#qans hr{
+    border: 0.1px solid gainsboro;
+}
+.Asub1 a{
+    color: rgba(36, 19, 223, 0.748);
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gainsboro;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 1vh;
+}
+.comment img{
+    width: 5vh;
+  
+    margin: 0;
+    
+}
+.comment h4{
+    margin: 0;
+    margin:0vh 2vh;
+    flex-grow: 2;
+}
+
+#drop{
+transform:rotate(90deg);
+font-weight: 900;
+font-size: 4vh;
+margin: 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////// */
+
+
+.Asub2{
+    width:33%;
+    
+}
+
+
+.sub1{
+    font-size: 2.2vh;
+    height: 13%;
+    margin-bottom: 2.5vh;
+    padding: 3vh;
+    border: 1px solid gainsboro;
+    display: grid;
+   grid-template-columns: 1;
+   grid-template-rows: repeat(7, 1fr);
+   grid-gap: 4vh;
+}
+.sub1 a{
+    text-decoration: none;
+    color: rgb(38, 167, 172);
+    margin: 0px;
+}
+
+.sub1 h2{
+    margin-bottom: 0px;
+    color: rgb(93,96,124);
+}
+.sub1 h5{
+    background-color: rgb(235,248,255);
+    margin-top: 0;
+    margin-bottom: 2vh;
+    padding: 1vh 2vh;
+  width: fit-content;
+  border-radius: 2.5vh;
+}
+.sub1 h3{
+    margin-top:0px ;
+    color: gray;
+    margin-bottom: 0px;
+}
+.sub1 input{
+    padding: 2.3vh;
+    border-radius:1vh;
+    border: 1px solid gainsboro;
+    font-size: 2.3vh;
+}
+
+.sub1 button{
+padding: 2.3vh;
+border-radius: 1vh;
+width: 45%;
+font-weight: 700;
+font-size: 2.3vh;
+border: none;
+background-color: rgb(68,203,134);
+color: white;
+}
+
+
+
+.sub2{
+    background-color: rgb(244,245,247);
+    margin-bottom: 2.5vh;
+    padding: 3vh;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+  font-size: 2vh;
+}
+.sub2 h2{
+    font-weight: 900;
+  
+}
+.sub2 h3,p{
+    color: rgba(0, 0, 0, 0.669);
+   
+}
+.sub2 h3{
+    cursor: pointer;
+}
+.sub2 hr{
+    display: none;
+}
+.sub2 > div:nth-last-child(1){
+    color: rgb(15, 169, 174);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sub3{
+    margin-bottom: 2.5vh;
+    padding: 3vh;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+  font-size: 2vh;
+}
+.sub3 >div{
+    padding:0vh 2vh;
+    display: flex;
+    border: 1px solid gainsboro;
+    border-radius: 1.5vh;
+    margin-bottom: 2vh;
+}
+.sub3 img{
+    margin-right: 2vh;
+}
+
+.sub3 h3{
+  font-weight: 900;
+  flex-grow: 3;
+  color: rgb(22, 164, 169);
+text-align: end;
+   
+}
+.sub3 >div:nth-last-child(1){
+    background-color: rgb(244,245,247);
+}
+.sub3 h2{
+   color: rgb(68,203,134);
+}
+
+
+@media only screen and (min-width:600px) and (max-width: 775px) {
+
+    .sub1{
+        display: none;
+    }
+    #Enav1,#Enav2{
+        display: none;
+    }
+    #Enav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        display: block;
+        width: 2vh;
+    }
+    #resp{
+        display:flex;
+        flex-direction: column;
+        margin-left: 85vh;
+        width: 2vh;
+        border: 1px solid red;
+    }
+    #resp hr{
+        margin-top: 1vh;
+        border-top: 2px solid black;
+        width:1vh
+    }
+    #logo img{
+        width: 17vh;
+    }
+
+
+
+ 
+}
+@media only screen and (max-width:600px){
+  
+   
+    .Amain{
+        padding:1.5% 7%;
+        display: flex;
+        flex-direction: column;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .Asub1{
+        width:100%;
+        /* margin-right: 4%; */
+    }
+    .Asub2{
+        margin-top: 5vh;
+        width:100%;
+        /* margin-right: 4%; */
+    }
+
+    #Enav1,#Enav2{
+        display: none;
+    }
+    #Enav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        display: block;
+        width: 2vh;
+    }
+    #resp{
+        display:flex;
+        flex-direction: column;
+        margin-left: 85vh;
+   
+    }
+    #resp hr{
+        margin-top: 1vh;
+        border-top: 2px solid black;
+    }
+    #logo img{
+        width: 17vh;
+    }
+
+    
+}
