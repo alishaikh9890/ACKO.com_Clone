@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="page">
+            <div class="container1">
+                <div class="container2">
+                    <div class="left">
+                        <div class="step1">
+                            <span class="span">
+                                <div class="jss1">1</div>
+                                <p class="p2">Enter details</p>
+                            </span>
+                            <span class="span">
+                                <div id="js2" class="jss1 js2">2</div>
+                                <p class="p2">verify details</p>
+                            </span>
+                            <span class="span">
+                                <div id="js3" class="jss1 js3">3</div>
+                                <p class="p2">Review & pay</p>
+                            </span>
+                        </div>
+                        <div id="details" class="details">
+                            <div class="jss2">
+                                <p class="p1">Answer a few more questions</p>
+                                <div class="all_details">
+                                    <div class="name" name="name">
+                                        <input class="input" onclick="increase()" type="text" placeholder="Lucky">
+                                        <p class="p3">Full name (as Per RC)</p>
+                                    </div>
+                                    <div class="name email">
+                                        <input class="input" onclick="increase()" type="text"
+                                            placeholder="someone@gmail.com">
+                                        <p class="p3">Email</p>
+                                    </div>
+                                    <div class="name mobile">
+                                        <input class="input" onclick="increase()" type="text" placeholder="+91 333-444">
+                                        <p class="p3">Mobile</p>
+                                        <p class="otp"></p>
+                                    </div>
+                                    <div class="name ">
+                                        <input class="input bike" onclick="increase()" autocapitalize="true" type="text"
+                                            placeholder="HR35C31343">
+                                        <p class="p3">Bike Number</p>
+                                    </div>
+                                    <div class="name pincode">
+                                        <input class="input" type="text" onclick="increase()" placeholder="123002">
+                                        <p class="p3">Pincode</p>
+                                    </div>
+                                    <div class="review">
+                                        <img src="../../images/details/calender.png" alt="">
+                                        <p class="p6">As your policy has expired, your new policy will start 3 days from
+                                            today,
+                                            i.e. May 29 2022. However, you’ll still get your policy instantly.</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="requirement">
+                                        <p class="p4">Previous year policy document is required in case of claim within
+                                            30 days of
+                                            the Acko Policy start date</p>
+                                    </div>
+                                    <div class="conditions">
+                                        <p class="p5">By tapping on continue I declare that I have provided correct
+                                            details and
+                                            have read Acko's T&C.</p>
+                                    </div>
+                                    <button onclick="solve()" class="button1">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="jss3">
+                            <div class="jss31">
+                                <div class="plan">
+                                    <div class="jss311">
+                                        <p class="p7">Comprehensive plan</p>
+                                        <p class="p8">for your Honda Activa</p>
+                                    </div>
+                                    <img src="../../images/details/bike.svg" alt="">
+                                </div>
+                                <div class="overview">
+                                    <div class="damage_premium">
+                                        <p>Own Damage Premium</p>
+                                        <div class="value"></div>
+                                    </div>
+                                    <div class="third_party_cover">
+                                        <p>Third Party cover</p>
+                                        <div class="value">
+                                        </div>
+                                    </div>
+                                    <div class="net_premium">
+                                        <p>Net Premium</p>
+                                        <div class="value"></div>
+                                    </div>
+                                    <div class="gst">
+                                        <p>GST</p>
+                                        <div class="value"></div>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <p>Total</p>
+                                    <div class="total"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    values()
+    function name(params) {
+        
+    }
+    var count = 0;
+    function increase() {
+        count++
+    }
+    function solve() {
+        document.getElementById("js2").style.background = "rgb(62, 183, 83)"
+        if (count == 5) {
+            count = 0
+            swal("are you sure you want to continue payment")
+                .then((value) => {
+                    resolve();
+                });
+        } else {
+            swal("Please provide all details", {
+                button: "ok",
+            });
+        }
+
+    }
+    function resolve() {
+        
+        document.getElementById("js3").style.background = "rgb(62, 183, 83)"
+        document.getElementById("details").innerHTML = ""
+    }
+
+</script>
+
+</html>

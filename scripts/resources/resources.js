@@ -248,7 +248,7 @@ function all_guides() {
                             <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders (1).webp" alt="">
                         </div>
                         
-                        <p>Get started with Two Wheeler Insurence</p>
+                        <p id="p111" class="p9">Get started with Two Wheeler Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -265,7 +265,7 @@ function all_guides() {
                             <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Get started with Health Insurance</p>
                             <p class="p10 jss3121 p10img">
                                 <span class="p10"> Read More 
                                      <img src="../../Images/resources/arrow right.png" alt="">
@@ -280,7 +280,7 @@ function all_guides() {
                             <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Get started with Group Health Insurance</p>
                             <p class="p10 jss3121 p10img">
                                 <span class="p10"> Read More 
                                      <img src="../../Images/resources/arrow right.png" alt="">
@@ -295,7 +295,7 @@ function all_guides() {
                             <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
                         </div>
                         <div class="jss812c">
-                            <p class="p9">Get started with Health Insurence</p>
+                            <p class="p9">Get started with Car Insurance </p>
                                 <p class="p10 jss3121 p10img">
                                     <span class="p10"> Read More 
                                          <img src="../../Images/resources/arrow right.png" alt="">
@@ -365,7 +365,7 @@ function all_guides() {
                     <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Get started with Car Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -380,7 +380,7 @@ function all_guides() {
                     <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Add-ons for Two Wheeler Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -395,7 +395,7 @@ function all_guides() {
                     <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Premium Calculator for Health Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -410,7 +410,7 @@ function all_guides() {
                     <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Add-ons for Group Health Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -425,7 +425,7 @@ function all_guides() {
                     <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Add-ons in Car Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -440,7 +440,7 @@ function all_guides() {
                     <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
                 </div>
                 <div class="jss312">
-                    <p>Get started with Group Health Insurence</p>
+                    <p>Premium Calculator for Bike Insurance</p>
                     <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1006,7 +1006,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Two Wheeler Insurance</p>
+                        <p>Get started with Car Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1021,7 +1021,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurance</p>
+                        <p>Add-ons in Car Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1036,7 +1036,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/roadside-assistance-in-car-insurance.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurance</p>
+                        <p>All you need to know about Zero Depreciation</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1051,7 +1051,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/car-insurance-with-budgeted-premiums.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurance</p>
+                        <p>Premium calculator for Car Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1066,7 +1066,7 @@ function car_insurence_guides() {
                         <img src="../../Images/resources/car-insurance-claim-for-cyclone-damages.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurance</p>
+                        <p>Showdown: Third party insurance vs Comprehensive Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1309,7 +1309,7 @@ function two_wheeler_insurence_guides() {
                         <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>Add-ons for Two Wheeler Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1324,7 +1324,7 @@ function two_wheeler_insurence_guides() {
                         <img src="../../Images/resources/buying-bike-insurance-for-first-time.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurence</p>
+                        <p>Premium Calculator for Bike Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1339,7 +1339,7 @@ function two_wheeler_insurence_guides() {
                         <img src="../../Images/resources/effective-tips-for-funding-a-two-wheeler-purchase.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Group Health Insurence</p>
+                        <p>How to compare Bike Insurance policies</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1535,7 +1535,7 @@ function group_health_insurence_guides() {
                         <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Two Wheeler Insurence</p>
+                        <p>Get started with Group Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1550,7 +1550,7 @@ function group_health_insurence_guides() {
                         <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>Add-ons for Group Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1792,7 +1792,7 @@ function health_insurence_guides() {
                         <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Two Wheeler Insurence</p>
+                        <p>Get started with Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1807,7 +1807,7 @@ function health_insurence_guides() {
                         <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>Premium Calculator for Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1822,7 +1822,7 @@ function health_insurence_guides() {
                         <img src="../../Images/resources/Group_10259.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>All you need to know about Arogya Sanjeevani Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1837,7 +1837,7 @@ function health_insurence_guides() {
                         <img src="../../Images/resources/top-up-super-top-up-plans-in-health-insurance.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>All about Cashless Health Insurance</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
@@ -1852,7 +1852,7 @@ function health_insurence_guides() {
                         <img src="../../Images/resources/corona-kavach-insurance-policy.webp" alt="">
                     </div>
                     <div class="jss312">
-                        <p>Get started with Health Insurence</p>
+                        <p>Insurance against COVID-19</p>
                         <p class="p10 jss3121 p10img">
                             <span class="p10"> Read More 
                                  <img src="../../Images/resources/arrow right.png" alt="">
