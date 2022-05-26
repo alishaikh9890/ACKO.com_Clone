@@ -295,7 +295,12 @@ text-align: center;
 #Esub3details > div{
     margin-top: 6%;
     margin-bottom: 6%;
+    width: 50%;
 }
+#Esub3details2 img{
+    width: 100%;
+}
+
 
 #Esub3details1{
     text-align: start;
@@ -697,7 +702,7 @@ text-align: end;
 }
 
 
-@media only screen and (min-width:600px) and (max-width: 775px) {
+@media only screen and (min-width:500px) and (max-width: 775px) {
 
     .sub1{
         display: none;
@@ -706,6 +711,7 @@ text-align: end;
         display: none;
     }
     #Enav{
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -716,24 +722,96 @@ text-align: end;
     #resp{
         display:flex;
         flex-direction: column;
-        margin-left: 85vh;
-        width: 2vh;
-        border: 1px solid red;
+        margin-left: 85%;
+        width: fit-content;
+        
+        height: fit-content;
     }
     #resp hr{
-        margin-top: 1vh;
+        margin-top: 0.5vh;
         border-top: 2px solid black;
-        width:1vh
+        width:3.5vh
     }
     #logo img{
         width: 17vh;
     }
 
+#Esub1img{
+    display: none;
+}
 
 
+
+#sub2details{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 4.5%;
+    margin-top: 8%;
+    justify-content: start;
+}
+#Esub3{
+  
+    background-color: rgb(246,247,251);
+    padding:5% 1%;
+    margin: 0;
+}
+
+#Esub3details{
+    background-color: white;
+    margin: 6% 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#Esub4{
+    padding: 3% 10%;
  
 }
-@media only screen and (max-width:600px){
+
+
+#Esub4details{
+  
+   grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+#Esub5head{
+    text-align: center;
+    line-height: 2vh;
+}
+
+#Esub5details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-gap: 5%;
+}
+#Esub5details >div:nth-last-child(1){
+    display: none;
+}
+
+
+
+#Esub6head{
+    text-align: center;
+    
+}
+
+
+#Esub6details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width:500px){
   
    
     .Amain{
@@ -766,16 +844,115 @@ text-align: end;
     #resp{
         display:flex;
         flex-direction: column;
-        margin-left: 85vh;
-   
+        margin-left: 76%;
+        width: fit-content;
+        
+        height: fit-content;
     }
     #resp hr{
-        margin-top: 1vh;
+        margin-top: 0.5vh;
         border-top: 2px solid black;
+        width:3.5vh
     }
     #logo img{
         width: 17vh;
     }
 
+    #Esub1img{
+        display: none;
+    }
+    #Esub2 h2{
+        text-align: start;
+    }
+    #sub2details{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 4.5%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        justify-content: start;
+    }
+    #Esub3{
+        
+        background-color: rgb(246,247,251);
+        padding:5% 1%;
+        margin: 0;
+    }
     
+    #Esub3details{
+        background-color: white;
+        margin: 6% 2%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #Esub3details2{
+        margin: 0%;
+        width: 100%;
+    }
+    #Esub3details > div{
+        /* margin-top: 6%;
+        margin-bottom: 6%; */
+        width: 90%;
+    }
+    #Esub3details1{
+        text-align: start;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    #Esub3{
+        
+        background-color: rgb(246,247,251);
+        padding:5% 2%;
+        margin: 0;
+    }
+    
+    #Esub4{
+        padding: 3% 10%;
+  
+    }
+    #Esub4 h2,p{
+        text-align: start;
+    }
+    
+    
+    #Esub4details{
+      
+       grid-template-columns: repeat(1, 1fr);
+     
+    }
+    
+#Esub5{
+    margin-top: 10%;
+}
+    #Esub5head{
+        text-align: start;
+        line-height: 2vh;
+    }
+    
+    #Esub5details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        grid-gap: 5%;
+    }
+    #Esub5details >div:nth-last-child(1){
+        display: none;
+    }
+    #Esub5details >div:nth-last-child(2){
+        display: none;
+    }
+    
+    #Esub6head{
+        text-align: start;
+        
+    }
+    
+    #Esub6details{
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    #Esub6details > div{
+        text-align: start;
+    }
 }
