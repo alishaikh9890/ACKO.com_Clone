@@ -34,16 +34,16 @@
                                 <p class="p1">Answer a few more questions</p>
                                 <div class="all_details">
                                     <div class="name" name="name">
-                                        <input class="input" onclick="increase()" type="text" placeholder="Lucky">
+                                        <input class="input" id="name" onclick="increase()" type="text" placeholder="Lucky">
                                         <p class="p3">Full name (as Per RC)</p>
                                     </div>
                                     <div class="name email">
-                                        <input class="input" onclick="increase()" type="text"
+                                        <input class="input" id="email" onclick="increase()" type="text"
                                             placeholder="someone@gmail.com">
                                         <p class="p3">Email</p>
                                     </div>
                                     <div class="name mobile">
-                                        <input class="input" onclick="increase()" type="text" placeholder="+91 333-444">
+                                        <input class="input" id="mobile" onclick="increase()" type="text" placeholder="+91 333-444">
                                         <p class="p3">Mobile</p>
                                         <p class="otp"></p>
                                     </div>
@@ -53,7 +53,7 @@
                                         <p class="p3">Bike Number</p>
                                     </div>
                                     <div class="name pincode">
-                                        <input class="input" type="text" onclick="increase()" placeholder="123002">
+                                        <input class="input" type="text" id="pincode" onclick="increase()" placeholder="123002">
                                         <p class="p3">Pincode</p>
                                     </div>
                                     <div class="review">
@@ -121,7 +121,10 @@
 </body>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-    values()
+    
+    function values() {
+        var name = document.getElementById("name").value
+    }
     function name(params) {
         
     }
@@ -129,15 +132,18 @@
     function increase() {
         count++
     }
-    function solve() {
+   async function solve() {
         document.getElementById("js2").style.background = "rgb(62, 183, 83)"
         if (count == 5) {
+            await values()
+            console.log("count")
             count = 0
             swal("are you sure you want to continue payment")
                 .then((value) => {
                     resolve();
                 });
         } else {
+            console.log("count");
             swal("Please provide all details", {
                 button: "ok",
             });
