@@ -128,44 +128,52 @@
         <p id="p1">OTP has been sent to</p>
         <p id="p2"><a id="a1" href="../Login/login.html"></a></p>
         <div id="otpBox">
-            <input type="tel" maxlength="4" id="otpBoxinput" oninput="debounce(fetchData,1000)">
+            <input type="tel" maxlength="4" id="otpBoxinput" oninput="debounce(checkOTP,1000)">
             <p id="wrongotp"></p>
         </div>
-        <div id="resendotp"> <a onclick="displayOtp()">Resend OTP</a></div>
+        <div id="resendotp"> <a onclick="displayOtpAgain()">Resend OTP</a></div>
 </div>
 </body>
 <script>
 
+    var loginData = JSON.parse(localStorage.getItem("AckoLoginNumber"))
     document.querySelector("#a1").innerText = ""
 
-    async function displayOtp(){
+    function displayOtp(){
+        document.querySelector("#a1").innerText = "+91 " + loginData.number;
 
-        let res = await fetch(`http://localhost:3000/users`)
-        let data = await res.json();
-
-        data.forEach(userData => {
-
-            if(userData.isLogin == true){
-
-                document.querySelector("#a1").innerText = "+91 " + userData.number;
-                
         setTimeout(() => {
             document.getElementById("displayotp").classList.add("displayotp")
             document.getElementById("displayotp").innerText = ""
-            document.getElementById("displayotp").innerText = "Your OTP is " + userData.otp
+            document.getElementById("displayotp").innerText = "Your OTP is " + loginData.otp
         }, 3000);
 
         setTimeout(() => {
             document.getElementById("displayotp").classList.remove("displayotp")
             document.getElementById("displayotp").innerText = ""
         }, 6000);
-            }
-        });
     }
 
+    function displayOtpAgain(){
+        var obj = {
+                number:loginData.number,
+                otp: Math.floor(Math.random()*10000)
+            }
+            localStorage.setItem("AckoLoginNumber",JSON.stringify(obj))
+            document.location.reload()
 
 
+        setTimeout(() => {
+            document.getElementById("displayotp").classList.add("displayotp")
+            document.getElementById("displayotp").innerText = ""
+            document.getElementById("displayotp").innerText = "Your OTP is " + loginData.otp
+        }, 3000);
 
+        setTimeout(() => {
+            document.getElementById("displayotp").classList.remove("displayotp")
+            document.getElementById("displayotp").innerText = ""
+        }, 6000);
+    }
 
 
     var timerId
@@ -178,31 +186,92 @@
         }, wait);
     }
 
+    function checkOTP(){
+        if(document.querySelector("#otpBoxinput").value == loginData.otp){
+            document.getElementById("wrongotp").innerText = ""
+            fetchData();
+            }else{
+                if(document.querySelector("#otpBoxinput").value.length == 4){
+                    document.getElementById("wrongotp").innerText = "Incorrect OTP"
+                }else{
+                    document.getElementById("wrongotp").innerText = ""
+                }
+            }
+    }
+
+
     async function fetchData(){
         try {
             let res = await fetch(`http://localhost:3000/users`)
             let data = await res.json();
 
-            checkData(data)
+            tweekData(data);
         } catch (error) {
             console.log(error)
         }
     }
 
-    function checkData(data){
+    function tweekData(data){
+        var boolean = false;
+        var id = "";
+
         data.forEach(userData => {
-            if(userData.isLogin == true){
-                if(document.querySelector("#otpBoxinput").value == userData.otp){
-                    document.getElementById("wrongotp").innerText = ""
-                }else{
-                    if(document.querySelector("#otpBoxinput").value.length == 4){
-                        document.getElementById("wrongotp").innerText = "Incorrect OTP"
-                    }else{
-                        document.getElementById("wrongotp").innerText = ""
-                    }
-                }
+            // patchLoginData(userData.id)
+            if(loginData.number == userData.number){
+                id = userData.id
+                boolean = true
             }
         });
+        if(boolean){
+            patchData(id);
+        }else{
+            postData();
+        }
+    }
+
+
+    async function patchData(id){
+        try {
+
+            let body = {
+                isLogin: true
+            }
+
+            let res = await fetch(`http://localhost:3000/users/${id}`,{
+                method:"PATCH",
+                body: JSON.stringify(body),
+                headers:{
+                    "Content-type": "application/json"
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
+    async function postData(){
+        
+        try {
+
+        let body = {
+        first_name: "",
+        last_name: "",
+        email: "",
+        isLogin: true,
+        number: loginData.number
+        }
+
+            let res = fetch(`http://localhost:3000/users`,{
+                method: "POST",
+                body: JSON.stringify(body),
+                headers:{
+                    "Content-type": "application/json"
+                }
+            });
+        } catch (error) {
+            console.log(error)
+        }
     }
 </script>
 </html>

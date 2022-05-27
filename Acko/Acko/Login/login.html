@@ -35,7 +35,7 @@
            display: flex;
            border: 1px solid rgba(58, 56, 56, 0.863);
            padding: 17px;
-           border-radius: 10px;
+           border-radius: 7px;
            margin-top: 50px;
        }
        #loginMain>#mobileNo>div>input{
@@ -147,98 +147,16 @@
     }
 
 
-    function submitFn(){
+    async function submitFn(){
         var input = document.querySelector("#number").value;
         if(input.length == 10){
-            fetchData();
-        }
-    }
 
-    async function fetchData(){
-        try {
-            let res = await fetch(`http://localhost:3000/users`)
-            let data = await res.json();
-
-            tweekData(data);
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-
-    function tweekData(data){
-        data.forEach(userData => {
-            patchLoginData(userData);
-            if(document.querySelector("#number").value == userData.number){
-                patchData(userData);
+            var obj = {
+                number:input,
+                otp: Math.floor(Math.random()*10000)
             }
-        });
-        postData()
-    }
-
-    async function patchLoginData(data){
-        try {
-
-                let body = {
-                    isLogin: false
-                }
-
-                let res = await fetch(`http://localhost:3000/users/${data.id}`,{
-                method: "PATCH",
-                body: JSON.stringify(body),
-                headers:{
-                    "Content-type": "application/json"
-                }
-                });
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-
-
-    async function patchData(data){
-        try {
-
-            let body = {
-                isLogin: true
-            }
-
-            let res = await fetch(`http://localhost:3000/users/${data.id}`,{
-                method:"PATCH",
-                body: JSON.stringify(body),
-                headers:{
-                    "Content-type": "application/json"
-                }
-            })
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-
-    async function postData(){
-        
-        try {
-
-        let body = {
-        first_name: "",
-        last_name: "",
-        email: "",
-        otp: Math.floor(Math.random()*10000),
-        isLogin: true,
-        number: document.querySelector("#number").value
-        }
-
-            let res = fetch(`http://localhost:3000/users`,{
-                method: "POST",
-                body: JSON.stringify(body),
-                headers:{
-                    "Content-type": "application/json"
-                }
-            });
-        } catch (error) {
-            console.log(error)
+            localStorage.setItem("AckoLoginNumber",JSON.stringify(obj))
+            window.location.href="../OTP/OTP.html"
         }
     }
     
