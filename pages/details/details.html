@@ -120,13 +120,17 @@
 </body>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
+     var count = 0;
+    function increase() {
+        count++
+    }
+
     localStorage.setItem("bike_no", "DL45BN0731");
     localStorage.setItem("model", "Honda Activa");
     localStorage.setItem("Registration", "2009");
     localStorage.setItem("Insured_Declared_Value", "15,040");
     localStorage.setItem("Policy_Start_Date", "May 30, 2022");
     localStorage.setItem("net_premium", "2390");
-    resolve()
    var model = localStorage.getItem("model");
    document.getElementById("p8").innerHTML = `for your ${model}`
 
@@ -137,6 +141,7 @@
    document.getElementById("gst").innerHTML = `₹ ${gst}`
    var total = net_premium + gst
    document.getElementById("total").innerHTML = `₹ ${total}`
+   
    document.getElementById("total1").innerHTML = `₹ ${total}`
 
 
@@ -165,10 +170,7 @@
     // function name(params) {
         
     // }
-    var count = 0;
-    function increase() {
-        count++
-    }
+   
     function solve() {
         document.getElementById("js2").style.background = "rgb(62, 183, 83)"
         if (count >= 5) {
