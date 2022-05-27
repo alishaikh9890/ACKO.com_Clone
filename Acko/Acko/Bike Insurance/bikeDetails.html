@@ -6,11 +6,543 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <title>Vehicle Details</title>
+    <style>
+
+        #hr{
+            border: 0.1px solid rgba(196, 190, 190, 0.169);
+        }
+        #mainContent{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        #mainContent>#bikeInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 58%;
+            height: 500px;
+            padding: 30px;
+            border: 0.5px solid rgba(196, 190, 190, 0.352);
+            border-radius: 10px;
+        }
+        #mainContent>#bikeInfo>p{
+            font-size: 15px;
+            cursor:pointer;
+            font-weight: 550;
+            color: rgb(41, 40, 40);
+        }
+        #mainContent>#bikeInfo>h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            color: rgb(74, 71, 71);
+            margin-top: -5px;
+        }
+        .model{
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            border: 0.5px solid rgba(196, 190, 190, 0.352);
+            border-radius: 10px;
+        }
+        .model>input{
+            outline: none;
+            border: none;
+            width: 90%;
+            height: 30px;
+            font-size: 16px;
+            margin-right: 30px;
+        }
+        .model2{
+            display: flex;
+            flex-direction: column;
+        }
+        .model2>h2{
+            font-weight: 900;
+        }
+
+
+
+        #mainContent>#bikeInfo>.bikeName{
+            position:absolute;
+            top: 360px;
+            left: auto;
+            height: 230px;
+            width: 40%;
+            max-width: 700px;
+            z-index: 1;
+            padding-left: 2px;
+            cursor: pointer;
+            overflow-y: hidden;
+            background-color: white;
+        }
+        #mainContent>#bikeInfo>.bikeName>h3{
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            color: rgb(70, 68, 68);
+        }
+        #mainContent>#bikeInfo>.bikeName>.bikeDiv{
+            font-size: 14px;
+            color: rgb(96, 92, 92);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(134, 130, 130);
+        }
+
+        #mainContent>#bikeInfo>#year{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        #mainContent>#bikeInfo>#year>div{
+            display: flex;
+        }
+        #mainContent>#bikeInfo>#year>div>p{
+            margin-left: 10px;
+            color: rgb(104, 104, 104);
+        }
+        #mainContent>#bikeInfo>#year>#select1{
+            font-size: 12px;
+            color: blueviolet;
+            background-color: rgba(196, 189, 189, 0.279);
+            padding: 5px;
+            border-radius:4px;
+            cursor: pointer;
+        }
+
+        #mainContent>#bikeInfo>.bikeYear{
+            position: absolute;
+            top: 415px;
+            left: auto;
+            display: grid;
+            width: 25%;
+            max-width: 400px;
+            margin-left: 130px;
+            grid-template-columns: repeat(3,auto);
+            background-color: white;
+            color: rgb(106, 103, 103);
+            padding: 5px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #mainContent>#bikeInfo>.bikeYear>div{
+            margin: auto;
+            margin-bottom: 8px;
+            padding:6px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 7px;
+            background-color:rgba(192, 185, 185, 0.279) ;
+            cursor: pointer;
+        }
+        .false{
+            border: 1px solid red;
+        }
+
+
+
+        #mainContent>#bikeInfo>#status{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0px;
+            font-size: 14px;
+        }
+        #mainContent>#bikeInfo>#status>div{
+            display: flex;
+        }
+        #mainContent>#bikeInfo>#status>div>p{
+            margin-left: 10px;
+            color: rgb(104, 104, 104);
+        }
+        #mainContent>#bikeInfo>#status>#select2{
+            font-size: 12px;
+            color: blueviolet;
+            background-color: rgba(196, 189, 189, 0.279);
+            padding: 5px;
+            border-radius:4px;
+        }
+        #mainContent>#bikeInfo>.bikeStatus{
+            position: absolute;
+            top: 455px;
+            left: auto;
+            width: 20%;
+            max-width: 400px;
+            margin-left: 130px;
+            background-color: white;
+            color: rgb(81, 76, 76);
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 15px;
+            padding-top: 8px;
+            padding-bottom: 16px;
+            font-size: 14px;
+        }
+        #mainContent>#bikeInfo>.bikeStatus>div{
+            width: 90%;
+            margin: auto;
+            padding: 8px;
+            text-align: center;
+            margin-top: 13px;
+            cursor: pointer;
+            border-radius: 2px;
+            background-color: rgba(196, 190, 190, 0.251);
+        }
+        .selected{
+            border: 1px solid rebeccapurple;
+        }
+        .active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        #button{
+            margin-top: 40px;
+            width: 150px;
+            height: 43px;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 900;
+            border-radius: 10px;
+            background-color: rgb(51, 184, 51);
+        }
+
+
+
+        #mainContent>#staticInfo{
+            width:34%;
+            height: 290px;
+            margin-left: 30px;
+            padding-left: 25px;
+            padding-top: 24px;
+            border-radius: 10px;
+            border: 0.5px solid rgba(196, 190, 190, 0.352);
+        }
+        #mainContent>#staticInfo>h2>b{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: rgb(59, 58, 58);
+        }
+        #mainContent>#staticInfo>div{
+            display: flex;
+            margin-top: -3px;
+        }
+        #mainContent>#staticInfo>div>div{
+            margin-top: 12px;
+            margin-left: 20px;
+        }
+        #mainContent>#staticInfo>div>div>b{
+            font-size: 15px;
+        }
+        #mainContent>#staticInfo>div>div>p{
+            font-size: 12px;
+            margin-top: 5px;
+            color: rgba(97, 94, 94, 0.795);
+        }
+
+
+        @media all and (max-width:800px){
+            #mainContent{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #mainContent>#bikeInfo{
+                width: 100%;
+            }
+            #mainContent>#staticInfo{
+                width: 100%;
+                margin-top: 50px;
+                margin-left: 0px;
+            }
+        }
+
+        *{
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div id="loginNav">
         <img src="../Login/logo/acko_logo.jfif">
         <a>Help</a>
     </div>
+    <hr id="hr">
+
+    <div id="mainContent">
+        <div id="bikeInfo">
+            <p id="ackoBikeNumber"></p>
+            <h2 id="heading">Select Your Bike</h2>
+            <div id="model" class="model">
+                <input type="text" placeholder="Select bike model" id="bikeInput">
+                <img src="data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='41' height='41' rx='10' fill='%2337C87E'/%3E %3Cpath d='M20.3333 24.6667C23.2789 24.6667 25.6667 22.2789 25.6667 19.3333C25.6667 16.3878 23.2789 14 20.3333 14C17.3878 14 15 16.3878 15 19.3333C15 22.2789 17.3878 24.6667 20.3333 24.6667Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3Cpath d='M27 26.0001L24.1 23.1001' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E">
+            </div>
+            <div id="bikeName"></div>
+            <div id="overlay"></div>
+            <div id="year">
+                <div>
+                <img src="data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cg clip-path='url(%23clip0)'%3E %3Cpath d='M5.03521 1.5704L5.65795 1.67871C5.65795 1.67871 6.57853 1.81409 6.63268 2.92419C6.63268 3.08665 6.79513 3.22203 6.95759 3.19495L7.79694 3.08665C7.90524 3.05957 8.01354 3.00542 8.0677 2.92419L9.25903 1.54333C9.31318 1.48918 9.34026 1.40795 9.31318 1.32672C9.23196 1.11011 9.20488 0.703977 8.55506 0.703977C7.90524 0.703977 7.71571 0.649825 7.33665 1.16427C7.01174 1.62455 6.19947 1.11011 5.54965 0.947659C5.38719 0.920584 5.25181 0.974735 5.14351 1.11011L4.98105 1.3538C4.9269 1.43502 4.95398 1.54333 5.03521 1.5704Z' fill='%238990A1'/%3E %3Cpath d='M8.77153 0.297838L9.06937 0.460293C9.12352 0.487368 9.17767 0.54152 9.20475 0.595672C9.28597 0.785202 9.47551 1.19134 9.52966 1.32672C9.55673 1.38087 9.58381 1.40795 9.63796 1.40795C9.77334 1.43502 10.0441 1.43502 10.0982 1.40795C10.1524 1.35379 10.2607 0.54152 10.1524 0.54152C10.0441 0.54152 9.61088 0.568596 9.61088 0.568596L9.47551 0.406141C9.39428 0.297838 9.28597 0.21661 9.15059 0.162459L8.93399 0.0541553C8.85276 0.0270795 8.77153 0.0541553 8.71738 0.108307C8.66323 0.162459 8.69031 0.270762 8.77153 0.297838Z' fill='%238990A1'/%3E %3Cpath d='M2.57193 7.77076C3.05929 7.77076 3.30297 7.55416 3.57373 7.31048C3.89864 7.01264 4.25063 6.68773 4.9546 6.68773C5.65857 6.68773 6.01055 7.01264 6.33546 7.31048C6.6333 7.58123 6.84991 7.77076 7.33727 7.77076C7.82463 7.77076 8.06832 7.55416 8.33907 7.31048C8.66398 7.01264 9.01597 6.68773 9.71994 6.68773C10.4239 6.68773 10.7759 7.01264 11.1008 7.31048C11.3986 7.58123 11.6152 7.77076 12.1026 7.77076C12.59 7.77076 12.8337 7.55416 13.1044 7.31048C13.2669 7.1751 13.4023 7.03972 13.6189 6.90434V5.98376C13.6189 4.87365 12.7254 3.98015 11.6152 3.98015H10.2615C10.7488 3.84477 11.1008 3.41156 11.1008 2.89712C11.1008 2.27437 10.5864 1.75993 9.96362 1.75993C9.34088 1.75993 8.82644 2.27437 8.82644 2.89712C8.82644 3.41156 9.17842 3.87185 9.66579 3.98015H5.52319C5.9564 3.84477 6.25424 3.46571 6.25424 3.00542C6.25424 2.43683 5.79395 1.97654 5.22536 1.97654C4.65676 1.97654 4.19648 2.43683 4.19648 3.00542C4.19648 3.46571 4.52139 3.87185 4.92752 3.98015H3.35713C2.24702 3.98015 1.35352 4.87365 1.35352 5.98376V7.12094C1.43474 7.1751 1.48889 7.22925 1.54305 7.2834C1.84088 7.58123 2.08456 7.77076 2.57193 7.77076ZM9.44918 2.89712C9.44918 2.59928 9.69286 2.38268 9.96362 2.38268C10.2344 2.38268 10.4781 2.62636 10.4781 2.89712C10.4781 3.16788 10.2344 3.41156 9.96362 3.41156C9.69286 3.41156 9.44918 3.19495 9.44918 2.89712ZM5.22536 2.68051C5.41489 2.68051 5.55027 2.81589 5.55027 3.00542C5.55027 3.19495 5.41489 3.33033 5.22536 3.33033C5.03583 3.33033 4.90045 3.19495 4.90045 3.00542C4.90045 2.81589 5.0629 2.68051 5.22536 2.68051Z' fill='%238990A1'/%3E %3Cpath d='M14.269 11.1552H13.6462V7.85199C13.5921 7.90615 13.5379 7.93322 13.5108 7.98737C13.1859 8.28521 12.8339 8.61012 12.13 8.61012C11.426 8.61012 11.074 8.28521 10.7491 7.98737C10.4513 7.71662 10.2347 7.52708 9.74729 7.52708C9.25993 7.52708 9.01624 7.74369 8.74549 7.98737C8.42058 8.28521 8.06859 8.61012 7.36462 8.61012C6.66065 8.61012 6.30866 8.28521 5.98375 7.98737C5.68592 7.71662 5.46931 7.52708 4.98195 7.52708C4.49458 7.52708 4.2509 7.74369 3.98014 7.98737C3.65523 8.28521 3.30325 8.61012 2.59928 8.61012C1.97653 8.58304 1.62455 8.36643 1.35379 8.12275V11.1552H0.731047C0.32491 11.1552 0 11.4802 0 11.9134C0 12.3195 0.32491 12.6444 0.731047 12.6444H14.269C14.6751 12.6444 15 12.3195 15 11.9134C15 11.4802 14.6751 11.1552 14.269 11.1552Z' fill='%238990A1'/%3E %3C/g%3E %3Cdefs%3E %3CclipPath id='clip0'%3E %3Crect width='15' height='12.6444' fill='white'/%3E %3C/clipPath%3E %3C/defs%3E %3C/svg%3E">
+                <p>Bike Bought in</p>
+                </div>
+                <div id="select1" onclick="year()">Select
+                    <img src="data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M4 6L8 10L12 6' stroke='%237C47E1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E">
+                </div>
+            </div>
+            <div id="bikeYear"></div>
+            <div id="status">
+                <div>
+                <img src="data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cg clip-path='url(%23clip0)'%3E %3Cpath d='M7.32886 7.04698C7.32886 5.07383 8.83221 3.47651 10.7114 3.24161C10.9463 3.19463 11.1342 3.00671 11.1342 2.77181V1.55034C11.1342 0.704698 10.4295 0 9.58389 0H1.59732C0.704698 0 0 0.704698 0 1.55034V12.4966C0 13.3893 0.704698 14.094 1.55034 14.094H9.53691C10.3826 14.094 11.0872 13.3893 11.0872 12.5436V11.2752C11.0872 11.0403 10.8993 10.8523 10.6644 10.8054C8.83222 10.6175 7.32886 9.02013 7.32886 7.04698Z' fill='%238990A1'/%3E %3Cpath d='M5.40264 3.71141C5.12076 3.71141 4.65096 3.71141 4.51002 3.66443C4.3221 3.61745 4.0872 3.52349 3.71137 3.52349C3.33553 3.52349 3.10063 3.66443 2.91271 3.71141C2.81875 3.71141 2.34895 3.71141 2.06707 3.71141C1.97311 3.71141 1.87915 3.75839 1.87915 3.85235V3.94631C1.87915 4.04027 1.92613 4.08725 2.02009 4.08725C2.48989 4.13423 2.95969 4.32215 2.95969 4.32215C3.10063 4.69799 3.33553 4.79195 3.33553 4.79195C3.33553 5.12081 3.14761 5.16779 3.14761 5.16779C2.81875 5.26175 2.44291 5.44967 2.34895 5.77852C2.16103 6.43624 2.25499 9.30202 3.28855 9.53691V10.2416C3.28855 10.4295 3.42949 10.5235 3.57043 10.5235H3.80533C3.99324 10.5235 4.0872 10.3826 4.0872 10.2416V9.53691C5.12076 9.30202 5.21472 6.43624 5.0268 5.77852C4.93284 5.40269 4.557 5.21477 4.22814 5.16779C4.22814 5.16779 4.04022 5.16779 4.04022 4.79195C4.04022 4.79195 4.27512 4.69799 4.41606 4.32215C4.41606 4.32215 4.93284 4.13423 5.35566 4.08725C5.44962 4.08725 5.4966 3.99329 5.4966 3.94631V3.85235C5.59056 3.75839 5.4966 3.71141 5.40264 3.71141Z' fill='white'/%3E %3Cpath d='M4.22817 4.13423C4.22817 4.41611 3.99327 4.60403 3.75837 4.60403C3.52347 4.60403 3.28857 4.36913 3.28857 4.13423C3.28857 3.85235 3.52347 3.71141 3.75837 3.71141C3.99327 3.71141 4.22817 3.85235 4.22817 4.13423Z' fill='%238990A1'/%3E %3Cpath d='M3.28802 9.02013H4.18063C4.27459 9.02013 4.32157 8.97315 4.32157 8.87919C4.32157 8.59731 4.22761 8.08054 3.71084 8.08054C3.19406 8.08054 3.14708 8.59731 3.1001 8.87919C3.14708 8.97315 3.24104 9.02013 3.28802 9.02013Z' fill='%238990A1'/%3E %3Cpath d='M11.1336 9.91276C12.7163 9.91276 13.9994 8.62971 13.9994 7.04699C13.9994 5.46426 12.7163 4.18121 11.1336 4.18121C9.55087 4.18121 8.26782 5.46426 8.26782 7.04699C8.26782 8.62971 9.55087 9.91276 11.1336 9.91276Z' fill='%238990A1'/%3E %3Cpath d='M10.9926 5.8255L10.053 6.43624C9.95909 6.48322 9.91211 6.62416 9.91211 6.71812C9.95909 7.04698 10.194 7.75168 10.9926 8.22148C11.0866 8.26846 11.2275 8.26846 11.3215 8.22148C12.1202 7.75168 12.3081 7.04698 12.402 6.71812C12.402 6.57718 12.3551 6.48322 12.2611 6.43624L11.3215 5.8255C11.1806 5.77852 11.0866 5.77852 10.9926 5.8255Z' fill='white'/%3E %3C/g%3E %3Cdefs%3E %3CclipPath id='clip0'%3E %3Crect width='14' height='14.094' fill='white'/%3E %3C/clipPath%3E %3C/defs%3E %3C/svg%3E">
+                <p>Current Policiy Status</p>
+                </div>
+                <div id="select2" onclick="policy()">Expired or not
+                    <img src="data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M4 6L8 10L12 6' stroke='%237C47E1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E">
+                </div>
+            </div>
+            <div id="bikeStatus"></div>
+            <button id="button" onclick="viewPrice()">View Prices</button>
+        </div>
+        <div id="staticInfo">
+            <h2><b>Why Acko Bike Insurance?</b></h2>
+            <div>
+                <img src="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M22.6667 32H9.33333C4.13332 32 0 27.8667 0 22.6667V9.33333C0 4.13333 4.13332 0 9.33333 0H22.6667C27.8667 0 32 4.13333 32 9.33333V22.6667C32 27.8667 27.8667 32 22.6667 32Z' fill='%23ECE4F9'/%3E %3Cpath d='M15.8102 28.492C22.6745 28.492 28.2391 22.8954 28.2391 15.9918C28.2391 9.08806 22.6745 3.49152 15.8102 3.49152C8.94595 3.49152 3.38135 9.08806 3.38135 15.9918C3.38135 22.8954 8.94595 28.492 15.8102 28.492Z' fill='white'/%3E %3Cpath d='M18.0622 20.9846H13.708V15.8154C13.708 14.5991 14.7011 13.6108 15.9233 13.6108C17.1455 13.6108 18.1386 14.5991 18.1386 15.8154V20.9846H18.0622Z' fill='%2370D4F9'/%3E %3Cpath d='M13.0971 20.9837H8.6665V17.3348C8.6665 16.1185 9.65957 15.1303 10.8818 15.1303C12.104 15.1303 13.0971 16.1185 13.0971 17.3348V20.9837Z' fill='%239364ED'/%3E %3Cpath d='M23.3334 20.9848H18.9028V18.1721C18.9028 16.9558 19.8959 15.9676 21.1181 15.9676C22.3404 15.9676 23.3334 16.9558 23.3334 18.1721V20.9848Z' fill='%23A892F7'/%3E %3Cpath d='M21.1182 14.8272C21.8776 14.8272 22.4932 14.2146 22.4932 13.4588C22.4932 12.7031 21.8776 12.0905 21.1182 12.0905C20.3588 12.0905 19.7432 12.7031 19.7432 13.4588C19.7432 14.2146 20.3588 14.8272 21.1182 14.8272Z' fill='%23A892F7'/%3E %3Cpath d='M15.9234 12.5468C16.6827 12.5468 17.2984 11.9342 17.2984 11.1785C17.2984 10.4228 16.6827 9.81018 15.9234 9.81018C15.164 9.81018 14.5483 10.4228 14.5483 11.1785C14.5483 11.9342 15.164 12.5468 15.9234 12.5468Z' fill='%2370D4F9'/%3E %3Cpath d='M10.8814 14.2191C11.6408 14.2191 12.2564 13.6065 12.2564 12.8508C12.2564 12.095 11.6408 11.4824 10.8814 11.4824C10.122 11.4824 9.50635 12.095 9.50635 12.8508C9.50635 13.6065 10.122 14.2191 10.8814 14.2191Z' fill='%239364ED'/%3E %3C/svg%3E">
+                <div>
+                    <b>Trustworthy</b>
+                    <p>Valued by 1 Million+ customers</p>
+                </div>
+            </div>
+            <div>
+                <img src="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M22.0009 32H9.99901C4.47161 32 0 27.515 0 22.0058V9.99418C0 4.46945 4.48713 0 9.99901 0H22.0009C27.5283 0 32 4.48497 32 9.99418V21.9903C32.0155 27.5306 27.5283 32 22.0009 32Z' fill='%23ECE4F9'/%3E %3Cpath d='M16.0001 28.5119C22.9138 28.5119 28.5183 22.91 28.5183 15.9997C28.5183 9.08948 22.9138 3.48761 16.0001 3.48761C9.08652 3.48761 3.48193 9.08948 3.48193 15.9997C3.48193 22.91 9.08652 28.5119 16.0001 28.5119Z' fill='white'/%3E %3Cpath d='M12.6851 21.23H19.1752C19.672 21.23 20.0912 20.8265 20.0912 20.3144V14.3241H20.0602C18.3057 14.3241 16.8928 12.9118 16.8928 11.1582H12.6851C12.1883 11.1582 11.769 11.5617 11.769 12.0738V20.3144C11.7846 20.8265 12.1883 21.23 12.6851 21.23Z' fill='%239364ED'/%3E %3Cpath d='M14.4238 17.7228L15.0449 18.3436L15.9454 17.4435L16.8304 18.3436L17.4515 17.7228L16.551 16.8227L17.467 15.9226L16.846 15.3174L15.9454 16.2175L15.0294 15.3174L14.4238 15.9226L15.3244 16.8227L14.4238 17.7228Z' fill='white'/%3E %3Cpath d='M19.7962 9.49738C18.7093 9.49738 17.8398 10.3664 17.8398 11.4528C17.8398 12.5391 18.7093 13.4081 19.7962 13.4081C20.883 13.4081 21.7525 12.5391 21.7525 11.4528C21.7525 10.3664 20.8675 9.49738 19.7962 9.49738Z' fill='%2316C2F8'/%3E %3Cpath d='M20.541 11.8408C20.6031 11.8408 20.6497 11.9029 20.6186 11.965C20.541 12.1667 20.3082 12.5547 19.7961 12.5547C19.2374 12.5547 19.0357 12.1667 18.9581 11.965C18.9425 11.9029 18.9736 11.8563 19.0357 11.8563L20.4769 11.8447L20.541 11.8408Z' fill='white'/%3E %3Cpath d='M20.619 11.3904C20.7646 11.3904 20.8826 11.2724 20.8826 11.1268C20.8826 10.9813 20.7646 10.8633 20.619 10.8633C20.4735 10.8633 20.3555 10.9813 20.3555 11.1268C20.3555 11.2724 20.4735 11.3904 20.619 11.3904Z' fill='white'/%3E %3Cpath d='M18.9574 11.3904C19.1029 11.3904 19.2209 11.2724 19.2209 11.1268C19.2209 10.9813 19.1029 10.8633 18.9574 10.8633C18.8118 10.8633 18.6938 10.9813 18.6938 11.1268C18.6938 11.2724 18.8118 11.3904 18.9574 11.3904Z' fill='white'/%3E %3C/svg%3E">
+                <div>
+                    <b>Zero hassle</b>
+                    <p>Instant policy issuance with no paperwork</p>
+                </div>
+            </div>
+            <div>
+                <img src="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M22.0009 32H9.99901C4.4716 32 0 27.515 0 22.0058V9.99418C0 4.46945 4.48713 0 9.99901 0H22.0009C27.5283 0 32 4.48497 32 9.99418V21.9903C32.0155 27.5306 27.5283 32 22.0009 32Z' fill='%23ECE4F9'/%3E %3Cpath d='M15.9997 28.5119C22.9133 28.5119 28.5178 22.91 28.5178 15.9997C28.5178 9.08948 22.9133 3.48761 15.9997 3.48761C9.08604 3.48761 3.48145 9.08948 3.48145 15.9997C3.48145 22.91 9.08604 28.5119 15.9997 28.5119Z' fill='white'/%3E %3Cpath d='M20.7477 15.1487H17.2932C17.0788 15.1487 16.9359 14.9104 17.0312 14.7198L19.8424 9.33557C19.9377 9.14498 19.7948 8.90674 19.5803 8.90674H14.7917C14.6726 8.90674 14.5773 8.97821 14.5296 9.07351L11.0989 16.864C11.0036 17.0546 11.1466 17.269 11.361 17.269H14.6487C14.8632 17.269 14.9823 17.4834 14.9108 17.674L12.9334 22.7009C12.8143 22.9868 13.1716 23.2251 13.4099 23.0107L20.9383 15.6252C21.1289 15.4584 20.986 15.1487 20.7477 15.1487Z' fill='%239364ED'/%3E %3C/svg%3E">
+                <div>
+                    <b>Super fast</b>
+                    <p>90%* claims settled under 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    
+    var ackoBike = localStorage.getItem("bike_no")
+    document.getElementById("ackoBikeNumber").innerText = ackoBike
+
+    var bikeInput = document.getElementById("bikeInput")
+    var bikeName = document.querySelector("#bikeName")
+    var overlay = document.getElementById("overlay")
+
+    bikeInput.onclick = function(){
+        bikeName.classList.add("bikeName")
+        overlay.classList.add("active")
+
+        let h3 = document.createElement("h3")
+        h3.innerText = "Popular Bikes"
+
+        let p1 = document.createElement("p")
+        p1.innerText = "Bajaj Pulsar 150 150CC"
+        p1.classList.add('bikeDiv')
+
+        let p2 = document.createElement("p")
+        p2.innerText = "Honda Activa 109CC"
+        p2.classList.add('bikeDiv')
+
+        let p3 = document.createElement("p")
+        p3.innerText = "Honda Cb Shine 125CC"
+        p3.classList.add('bikeDiv')
+
+        let p4 = document.createElement("p")
+        p4.innerText = "TVS Jupiter 110CC"
+        p4.classList.add('bikeDiv')
+
+        let p5 = document.createElement("p")
+        p5.innerText = "Suzuki Access 125CC"
+        p5.classList.add('bikeDiv')
+
+        let p6 = document.createElement("p")
+        p6.innerText = "Yamaha Fzs 150CC"
+        p6.classList.add('bikeDiv')
+
+        bikeName.append(h3,p1,p2,p3,p4,p5,p6)
+    }
+
+    bikeName.addEventListener("click",myFunction1);
+    function myFunction1(e){
+        console.log(e.target.innerText);
+        document.querySelector("#model").innerHTML = ""
+        document.getElementById("model").classList.remove("model")
+        document.getElementById("model").classList.add("model2")
+
+        var img = document.createElement("img")
+        img.src="data:image/svg+xml,%3Csvg width='145' height='104' viewBox='0 0 145 104' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M114.683 21.367C120.35 21.367 124.943 16.7732 124.943 11.1065C124.943 5.43975 120.35 0.845947 114.683 0.845947C109.016 0.845947 104.422 5.43975 104.422 11.1065C104.422 16.7732 109.016 21.367 114.683 21.367Z' fill='%23FFF1E2'/%3E %3Cpath d='M0.501634 103.101H144.5C144.5 103.101 137.572 71.1352 121.436 65.961C105.299 60.7869 89.9525 89.1569 68.3791 40.7482C43.21 -15.641 0.194694 14.0883 0.501634 103.101Z' fill='%23E4F6FE'/%3E %3Cpath d='M40.1847 102.881C49.1736 102.531 56.3647 92.8839 56.3647 81.3956C56.3647 69.9073 49.1736 60.6991 40.1847 60.8745L35.3613 60.9622V103.101L40.1847 102.881Z' fill='%230B0E34'/%3E %3Cpath d='M18.2166 82.5356C18.2166 70.7842 25.6708 61.1376 34.7913 60.9622C43.8241 60.7868 51.0591 69.995 51.0591 81.5271C51.0591 93.0593 43.8241 102.706 34.7913 103.057C25.6269 103.451 18.2166 94.2432 18.2166 82.5356Z' fill='%23343758'/%3E %3Cpath d='M24.9255 82.3164C24.9255 75.1691 29.3542 69.2495 34.7476 69.118C40.141 68.9864 44.482 74.6429 44.482 81.7025C44.482 88.7621 40.141 94.6816 34.7476 94.9009C29.3542 95.1201 24.9255 89.4637 24.9255 82.3164Z' fill='%23B0B1C4'/%3E %3Cpath d='M32.818 85.1227C31.5026 84.4212 30.9764 82.7988 31.678 81.4833L39.0445 67.3202C39.7461 66.0048 41.3685 65.4786 42.6839 66.1802C43.9994 66.8818 44.5256 68.5042 43.824 69.8196L36.4575 83.9827C35.7559 85.2981 34.1335 85.7805 32.818 85.1227Z' fill='%23343758'/%3E %3Cpath d='M96.9684 35.3108C96.5299 35.3108 96.0914 35.1793 95.7407 34.8723C94.9952 34.2146 94.9075 33.0745 95.6091 32.373L99.7747 27.9443C100.871 26.7604 102.449 26.1465 104.072 26.1465L109.728 26.2342C110.737 26.2342 111.526 27.0673 111.526 28.032C111.526 28.9966 110.693 29.7859 109.684 29.7859C109.684 29.7859 109.684 29.7859 109.641 29.7859L103.984 29.7421C103.414 29.7859 102.888 29.9613 102.493 30.3998L98.3716 34.8285C97.9769 35.1354 97.4507 35.3108 96.9684 35.3108Z' fill='%23343758'/%3E %3Cpath d='M110.868 76.9231C109.465 77.4932 107.887 76.8355 107.317 75.4761L96.3108 47.8078L101.397 45.6592L112.403 73.4591C112.973 74.7746 112.272 76.3531 110.868 76.9231Z' fill='%23343758'/%3E %3Cpath d='M63.0299 49.1231C62.8983 55.1741 51.5416 56.4896 46.499 55.3057C42.4649 54.3849 35.7561 53.3325 33.169 52.894C31.9851 52.7186 30.8012 52.894 29.7489 53.4202C28.258 54.1656 26.3287 55.788 24.6624 59.1205C23.6978 61.0937 25.7587 63.1546 27.9072 62.3653C30.2312 61.4883 33.1252 61.006 36.3261 61.883C41.7633 63.2861 44.9643 66.9255 46.8498 73.8097C48.1652 78.6331 49.1299 83.0618 50.3576 84.2895C53.427 87.3151 77.0614 86.3943 79.3415 85.6927C81.5778 84.9911 90.9175 45.7029 90.9175 45.7029L63.0299 49.1231Z' fill='%23F75276'/%3E %3Cpath d='M90.9173 45.7468C89.1633 51.754 79.3413 85.7366 79.3413 85.7366C79.3413 85.7366 86.5763 85.3858 88.6372 84.3334C94.3375 81.4394 101.222 45.6152 101.222 45.6152L90.9173 45.7468Z' fill='%230B0E34'/%3E %3Cpath d='M63.0298 49.1231C63.0298 49.1231 64.0383 56.1388 77.149 54.4726L74.0357 67.0132C72.9833 71.3104 68.9054 74.3798 64.2575 74.3798L46.9812 74.4675C48.209 79.0277 49.1298 83.1056 50.3137 84.2895C53.3831 87.3151 77.0174 86.3943 79.2975 85.6927C81.5338 84.9911 90.8735 45.7029 90.8735 45.7029L63.0298 49.1231Z' fill='%23E50031'/%3E %3Cpath d='M90.9174 45.7467L87.9796 36.3631C87.9796 36.3631 80.7884 34.4337 74.3427 36.4508C67.8531 38.4678 63.1613 43.0719 63.0298 49.123C63.0298 49.123 63.2929 56.4895 90.9174 45.7467Z' fill='%23F75276'/%3E %3Cpath d='M110.474 102.925C119.244 102.531 126.347 92.7523 126.347 81.0448C126.347 69.3372 119.287 59.9975 110.474 60.1291L105.738 60.2168V103.101L110.474 102.925Z' fill='%230B0E34'/%3E %3Cpath d='M88.9004 82.1849C88.9004 70.2142 96.2231 60.3922 105.124 60.2168C113.982 60.0414 121.085 69.425 121.085 81.1763C121.085 92.9277 113.982 102.75 105.124 103.144C96.2231 103.495 88.9004 94.1116 88.9004 82.1849Z' fill='%23343758'/%3E %3Cpath d='M95.5215 81.9655C95.5215 74.6867 99.8625 68.6794 105.168 68.5479C110.43 68.4163 114.683 74.1605 114.683 81.3955C114.683 88.6305 110.43 94.6377 105.168 94.8131C99.8625 94.9885 95.5215 89.2443 95.5215 81.9655Z' fill='%23B0B1C4'/%3E %3Cpath d='M106.045 85.0351C104.642 85.6051 103.019 84.9474 102.493 83.5881L92.0135 57.3667C91.6627 56.4459 91.8381 55.4374 92.4958 54.6919C93.8551 53.1134 96.4422 53.508 97.2315 55.3935L107.667 81.5711C108.15 82.8865 107.448 84.465 106.045 85.0351Z' fill='%23343758'/%3E %3Cpath d='M100.432 30.8821C100.432 30.8821 91.4435 28.3828 87.7164 35.3547C83.9454 42.3266 89.9965 50.6139 100.432 49.2546V30.8821Z' fill='%23F75276'/%3E %3Cpath d='M107.799 40.0026C107.799 45.0451 104.511 49.1669 100.433 49.2546C96.3547 49.2984 93.0222 45.2205 93.0222 40.1341C93.0222 35.0477 96.3547 30.9259 100.433 30.8821C104.511 30.8821 107.799 34.96 107.799 40.0026Z' fill='%23FF92AC'/%3E %3Cpath d='M106.264 39.8273C106.264 43.7298 104.028 46.8869 101.222 46.9307C98.4155 46.9746 96.1792 43.8175 96.1792 39.915C96.1792 36.0125 98.4593 32.8554 101.266 32.8115C104.028 32.8115 106.264 35.9686 106.264 39.8273Z' fill='white'/%3E %3Cpath d='M87.7163 35.8809C87.2339 35.8809 86.7078 35.7055 86.357 35.3547L83.463 32.4607C82.1037 31.1014 80.1743 30.3121 78.2011 30.3121H72.2378C71.1854 30.3121 70.3523 29.5229 70.3523 28.5143C70.3523 27.5058 71.1854 26.7166 72.2378 26.7166H78.2011C81.2267 26.7166 84.1207 27.9005 86.1816 29.9613L89.0756 32.8553C89.7771 33.5569 89.7771 34.697 89.0317 35.3986C88.6371 35.7055 88.1986 35.8809 87.7163 35.8809Z' fill='%23343758'/%3E %3Cpath d='M63.0297 49.1232C63.0297 49.1232 56.6717 49.1232 55.0054 48.1585C53.3392 47.1938 41.0616 45.133 33.2566 46.3607C33.2566 46.3607 29.5294 46.9307 29.2664 47.8077C29.0033 48.6847 27.6878 53.6396 28.4332 54.3411C29.1787 54.9989 45.8849 56.5774 47.0688 56.7528C48.2089 56.8843 60.7057 57.2351 63.9505 51.0963C63.9066 51.0963 63.5559 50.5702 63.0297 49.1232Z' fill='%23343758'/%3E %3Cpath d='M109.114 57.3227L91.3996 59.0327C90.9612 59.0766 90.6104 58.8135 90.5227 58.4189L90.0842 56.5772C89.9526 56.0949 90.3473 55.6126 90.8296 55.5687L108.544 53.9025C108.939 53.8586 109.334 54.1217 109.421 54.5163L109.816 56.3141C109.948 56.7965 109.597 57.2788 109.114 57.3227Z' fill='%23FFE9EE'/%3E %3C/svg%3E"
+
+        var h2 = document.createElement("h3")
+        h2.innerText = e.target.innerText
+
+        document.getElementById("model").append(img,h2)
+
+        document.querySelector("#heading").innerText = "Here’s your bike"
+        document.querySelector("#bikeName").classList.remove("bikeName");
+        document.querySelector("#bikeName").innerHTML = ""
+        document.querySelector("#overlay").classList.remove("active");
+
+        localStorage.setItem("model",e.target.innerText)
+    }
+
+
+    var bikeYear = document.getElementById("bikeYear");
+
+    function year(){
+        bikeYear.classList.add("bikeYear")
+        overlay.classList.add("active")
+
+        var div1 = document.createElement("div")
+        div1.innerText = 2022
+        div1.classList.add("bikeDivYear")
+
+        var div2 = document.createElement("div")
+        div2.innerText = 2021
+        div2.classList.add("bikeDivYear")
+
+        var div3 = document.createElement("div")
+        div3.innerText = 2020
+        div3.classList.add("bikeDivYear")
+
+        var div4 = document.createElement("div")
+        div4.innerText = 2019
+        div4.classList.add("bikeDivYear")
+
+        var div5 = document.createElement("div")
+        div5.innerText = 2018
+        div5.classList.add("bikeDivYear")
+
+        var div6 = document.createElement("div")
+        div6.innerText = 2017
+        div6.classList.add("bikeDivYear")
+
+        var div7 = document.createElement("div")
+        div7.innerText = 2016
+        div7.classList.add("bikeDivYear")
+
+        var div8 = document.createElement("div")
+        div8.innerText = 2015
+        div8.classList.add("bikeDivYear")
+
+        var div9 = document.createElement("div")
+        div9.innerText = 2014
+        div9.classList.add("bikeDivYear")
+
+        var div10 = document.createElement("div")
+        div10.innerText = 2013
+        div10.classList.add("bikeDivYear")
+
+        var div11 = document.createElement("div")
+        div11.innerText = 2012
+        div11.classList.add("bikeDivYear")
+
+        var div12 = document.createElement("div")
+        div12.innerText = 2011
+        div12.classList.add("bikeDivYear")
+
+        var div13 = document.createElement("div")
+        div13.innerText = 2010
+        div13.classList.add("bikeDivYear")
+
+        var div14 = document.createElement("div")
+        div14.innerText = "before 2010"
+        div14.classList.add("bikeDivYear")
+
+
+        bikeYear.append(div1,div2,div3,div4,div5,div6,div7,div8,div9,div10,div11,div12,div13,div14)
+    }
+
+    bikeYear.addEventListener("click",myFunction);
+    function myFunction(e){
+        console.log(e.target.innerText);
+        document.getElementById("select1").innerHTML = e.target.innerText
+        document.getElementById("bikeYear").classList.remove("bikeYear")
+        document.getElementById("bikeYear").innerHTML = ""
+        document.querySelector("#overlay").classList.remove("active");
+        localStorage.setItem("Registration",e.target.innerText)
+
+        document.getElementById("select1").classList.remove("false")
+    }
+
+    function policy(){
+        overlay.classList.add("active")
+
+        var pol1 = document.createElement("div")
+        pol1.innerText = "Policy Not Expired"
+
+        var pol2 = document.createElement("div")
+        pol2.innerText = "Expired within 90 days"
+
+        var pol3 = document.createElement("div")
+        pol3.innerText = "Expired more than 90 days ago"
+
+        document.querySelector("#bikeStatus").classList.add("bikeStatus")
+        document.querySelector("#bikeStatus").append(pol1,pol2,pol3)
+    }
+    document.querySelector("#bikeStatus").addEventListener("click",myFunction3)
+    function myFunction3(e){
+        console.log(e.target.innerText)
+        document.getElementById("select2").innerHTML = e.target.innerText;
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus")
+        document.querySelector("#bikeStatus").innerHTML = ""
+        document.querySelector("#overlay").classList.remove("active");
+        localStorage.setItem("PolicyPeriod",e.target.innerText)
+
+        document.getElementById("select2").classList.remove("false")
+    }
+
+    function viewPrice(){
+        if(document.getElementById("select1").innerText == "Select" && document.getElementById("select2").innerText == 'Expired or not'){
+            document.getElementById("select1").classList.add("false")
+            document.getElementById("select2").classList.add("false")
+        }else if(document.getElementById("select1").innerText != "Select" && document.getElementById("select2").innerText == 'Expired or not'){
+            document.getElementById("select2").classList.add("false")
+        }else if(document.getElementById("select1").innerText == "Select" && document.getElementById("select2").innerText != 'Expired or not'){
+            document.getElementById("select1").classList.add("false")
+        }else{
+            window.location.href="./bikeInsurance.html"
+        }
+    }
+
+    overlay.onclick=function(){
+        document.querySelector("#bikeName").classList.remove("bikeName");
+        document.querySelector("#bikeName").innerHTML = ""
+        document.querySelector("#overlay").classList.remove("active");
+
+
+        document.getElementById("bikeYear").classList.remove("bikeYear")
+        document.getElementById("bikeYear").innerHTML = ""
+
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus")
+        document.querySelector("#bikeStatus").innerHTML = ""
+    }
+</script>
+
 </html>
