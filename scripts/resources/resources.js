@@ -11,7 +11,7 @@ function load_resources() {
          <div class="popular_guides">
              <h2>Popular guides</h2>
              <div class="jss3">
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
@@ -24,7 +24,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
@@ -37,7 +37,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
@@ -52,7 +52,7 @@ function load_resources() {
                  </a>
              </div>
              <div class="jss4">
-                 <a href="#">
+                 <a onclick="load_guides()" href="#" >
                      <div class="jss41">
                          Explore more guides
                          <div class="jss3121">
@@ -66,7 +66,7 @@ function load_resources() {
              <h2>Popular articles</h2>
              <p class="paragraph1">Read articles on insurance to understand insurance related features, benefits and tips in detail</p>
              <div class="jss3">
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss3111">
                          <div class="jss311">
                              <img src="../../Images/resources/tips-to-reduce-your-two-wheeler-insurance-premium.webp" alt="">
@@ -79,7 +79,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss3111">
                          <div class="jss311">
                              <img src="../../Images/resources/things-to-know-about-car-insurance-for-beginners.webp" alt="">
@@ -92,7 +92,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/article1.html">
                      <div class="jss3111">
                          <div class="jss311">
                              <img src="../../Images/resources/room-rent-capping-in-health-insurance.webp" alt="">
@@ -107,7 +107,7 @@ function load_resources() {
                  </a>
              </div>
              <div class="jss4">
-                 <a href="#">
+                 <a onclick="load_articles()" href="#">
                      <div class="jss41">
                          Explore more articles
                          <div class="jss3121">
@@ -121,7 +121,7 @@ function load_resources() {
              <h2>Popular ebooks</h2>
              <p class="paragraph1">Checkout handy ebooks on insurence</p>
              <div class="jss3">
-                 <a href="#">
+                 <a href="../../public/pages/resources/ebook1.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/complete-guide-to-vehicle-insurance.webp" alt="">
@@ -134,7 +134,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/ebook2.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
@@ -147,7 +147,7 @@ function load_resources() {
                          </div>
                      </div>
                  </a>
-                 <a href="#">
+                 <a href="../../public/pages/resources/ebook1.html">
                      <div class="jss31">
                          <div class="jss311">
                              <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
@@ -162,7 +162,7 @@ function load_resources() {
                  </a>
              </div>
              <div class="jss4">
-                 <a href="#">
+                 <a onclick="load_ebooks" href="#">
                      <div class="jss41">
                          Explore more ebooks
                          <div class="jss3121">
@@ -259,7 +259,7 @@ function all_guides() {
                 </div>
             </a>
             <div class="jss812">
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
@@ -274,7 +274,7 @@ function all_guides() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
@@ -289,7 +289,7 @@ function all_guides() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
@@ -314,7 +314,7 @@ function all_guides() {
     <h2>All guides</h2>
     <div class="jss3">
         
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/8-motorcycle-riding-tips-for-female-bike-riders.webp" alt="">
@@ -329,7 +329,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/reimbursement-in-health-insurance.webp" alt="">
@@ -344,7 +344,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/individual-medical-insurance.webp" alt="">
@@ -359,7 +359,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/how-to-renew-car-insurance-during-coronavirus-lockdown (1).webp" alt="">
@@ -374,7 +374,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/engine_protection_cover_in_bike_insurance_add-on.webp" alt="">
@@ -389,7 +389,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/health-insurance-premium-calculator.webp" alt="">
@@ -404,7 +404,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/top-up-and-super-top-up-health-insurance-plans.webp" alt="">
@@ -419,7 +419,7 @@ function all_guides() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/article1.html">
             <div class="jss31">
                 <div class="jss311">
                     <img src="../../Images/resources/6-Common-Misconceptions-about-Zero-Depreciation-In-Car-Insurance-.webp" alt="">
@@ -556,7 +556,7 @@ function all_articles() {
         return `<div class="jss8">
         <h2 class="jss8h2">Popular Articles</h2>
         <div class="jss81">
-            <a href="#">
+            <a href="../../public/pages/resources/article1.html">
                 <div class="jss811">
                     <div class="jss8111">
                         <div class="jss31111">
@@ -576,7 +576,7 @@ function all_articles() {
                 </div>
             </a>
             <div class="jss812">                
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/is-puc-certificate-mandatory-for-car-insurance.webp" alt="">
@@ -594,7 +594,7 @@ function all_articles() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/cooling-off-period-in-health-insurance.webp" alt="">
@@ -612,7 +612,7 @@ function all_articles() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/article1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/dental-insurance.webp" alt="">
@@ -639,7 +639,7 @@ function all_articles() {
 <div class="second_box_rigth_end2">
     <h2>All Articles</h2>
     <div class="jss3">
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/can-you-have-two-insurance-policies-on-the-same-car.webp" alt="">
@@ -652,7 +652,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/is-puc-certificate-mandatory-for-car-insurance.webp" alt="">
@@ -665,7 +665,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/cooling-off-period-in-health-insurance.webp" alt="">
@@ -678,7 +678,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/dental-insurance.webp" alt="">
@@ -691,7 +691,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/does-your-health-insurance-cover-brain-surgery.webp" alt="">
@@ -717,7 +717,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/does-your-health-insurance-cover-robotic-surgery.webp" alt="">
@@ -730,7 +730,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/claim-car-insurance-for-damages-beyond-repair.webp" alt="">
@@ -743,7 +743,7 @@ function all_articles() {
             </div>
         </div>
     </a>
-    <a href="#">
+    <a href="../../public/pages/resources/article1.html">
         <div class="jss3111">
             <div class="jss311">
                 <img src="../../Images/resources/mistakes-to-avoid-while-buying-a-maternity-insurance-policy.webp" alt="">
@@ -774,7 +774,7 @@ function all_ebooks() {
         return ` <div class="jss8">
         <h2 class="jss8h2">Popular ebooks</h2>
         <div class="jss81">
-            <a href="#">
+            <a href="../../public/pages/resources/ebook1.html">
                 <div class="jss811">
                     <div class="jss8111">
                         <div class="jss31111">
@@ -792,7 +792,7 @@ function all_ebooks() {
                 </div>
             </a>
             <div class="jss812">
-                <a href="#">
+                <a href="../../public/pages/resources/ebook1.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
@@ -807,7 +807,7 @@ function all_ebooks() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/ebook2.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
@@ -822,7 +822,7 @@ function all_ebooks() {
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="../../public/pages/resources/ebook2.html">
                     <div class="jss812a">
                         <div class="jss812b">
                             <img src="../../Images/resources/introducing-acko-health-ebook-cover-1200-550.webp" alt="">
@@ -847,7 +847,7 @@ function all_ebooks() {
     <h2>All ebooks</h2>
     <div class="jss3">
         
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/complete-guide-to-vehicle-insurance.webp" alt="">
@@ -862,7 +862,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/car_insurance_add-ons_guides_thumbnail.webp" alt="">
@@ -877,7 +877,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/creating-good-workplace-culture-e-book.webp" alt="">
@@ -892,7 +892,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/introducing-acko-health-ebook-cover-1200-550.webp" alt="">
@@ -907,7 +907,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/power-to-personalise-e-book.webp" alt="">
@@ -922,7 +922,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/getting-started-with-bike-insurance-ebook-cover.webp" alt="">
@@ -937,7 +937,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/vehical-Insurance-terminologies-ebook-cover-1200-550.webp" alt="">
@@ -952,7 +952,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/mental-health-in-cities.webp" alt="">
@@ -967,7 +967,7 @@ function all_ebooks() {
                 </div>
             </div>
         </a>
-        <a href="#">
+        <a href="../../public/pages/resources/ebook2.html">
             <div class="jss31">
                 <div id="jss311" class="jss311">
                     <img src="../../Images/resources/how-to-select-health-insurance.webp" alt="">
