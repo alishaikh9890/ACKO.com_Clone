@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebook1</title>
     <link rel="stylesheet" href="../../CSS/resources/index.css"/>
+    <link rel="stylesheet" href="../../../footerComponent/footer.css"/>
 </head>
 <body style="box-sizing: border-box;padding:0%; margin:0%">
     <div id="Enav">
+        <div id="logo"><a href="../../../index/index.html"><img src="https://imgs.search.brave.com/IGRIXhKZkhOpNGxCb4Q-7XFpO5-Gb-QAVHELKicxKGc/rs:fit:1276:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC53/VWI4eE8zdkk2MHFu/MTRzYUFaOTlnQUFB/QSZwaWQ9QXBp" /> </a></div>
+        <div id="resp"><hr><hr><hr></div>
+
+
         <div id="Enav1">
-            <div style="width:13%;"><a><img src="https://imgs.search.brave.com/IGRIXhKZkhOpNGxCb4Q-7XFpO5-Gb-QAVHELKicxKGc/rs:fit:1276:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC53/VWI4eE8zdkk2MHFu/MTRzYUFaOTlnQUFB/QSZwaWQ9QXBp" /> </a></div>
+            <div style="width:13%;"><a href="../../../index/index.html"><img src="https://imgs.search.brave.com/IGRIXhKZkhOpNGxCb4Q-7XFpO5-Gb-QAVHELKicxKGc/rs:fit:1276:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC53/VWI4eE8zdkk2MHFu/MTRzYUFaOTlnQUFB/QSZwaWQ9QXBp" /> </a></div>
             <div>Products</div>
             <div>Resources</div>
         </div>
@@ -90,7 +95,7 @@
                 <button>Download now (it's free!)</button>
             </div>
 
-            <div>
+            <div id="Esub3details2">
                 <img src="https://images.ctfassets.net/uwf0n1j71a7j/4nJrs2FyzeWeU8BTuKJLKL/22a9d8daa1a484e8bda55814d34c063b/add-ons-help.png?fm=webp&w=384&q=75" />
             </div>
             
@@ -208,7 +213,12 @@
 
 
 </div>
-
+<div id="footer"></div>
 
 </body>
+<script type="module">
+    let bottom = document.getElementById("footer");
+        import footer from "../../../footerComponent/footer.js";
+        bottom.innerHTML = footer();
+</script>
 </html>
