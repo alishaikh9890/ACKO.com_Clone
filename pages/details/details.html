@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <div class="page">
             <div class="container1">
                 <div class="container2">
-                    <div class="left">
+                    <div id="left" class="left">
                         <div class="step1">
                             <span class="span">
                                 <div class="jss1">1</div>
@@ -34,7 +34,8 @@
                                 <p class="p1">Answer a few more questions</p>
                                 <div class="all_details">
                                     <div class="name" name="name">
-                                        <input class="input" id="name" onclick="increase()" type="text" placeholder="Lucky">
+                                        <input class="input" id="name" onclick="increase()" type="text"
+                                            placeholder="Lucky">
                                         <p class="p3">Full name (as Per RC)</p>
                                     </div>
                                     <div class="name email">
@@ -43,7 +44,8 @@
                                         <p class="p3">Email</p>
                                     </div>
                                     <div class="name mobile">
-                                        <input class="input" id="mobile" onclick="increase()" type="text" placeholder="+91 333-444">
+                                        <input class="input" id="mobile" onclick="increase()" type="text"
+                                            placeholder="+91 333-444">
                                         <p class="p3">Mobile</p>
                                         <p class="otp"></p>
                                     </div>
@@ -53,7 +55,8 @@
                                         <p class="p3">Bike Number</p>
                                     </div>
                                     <div class="name pincode">
-                                        <input class="input" type="text" id="pincode" onclick="increase()" placeholder="123002">
+                                        <input class="input" type="text" id="pincode" onclick="increase()"
+                                            placeholder="123002">
                                         <p class="p3">Pincode</p>
                                     </div>
                                     <div class="review">
@@ -84,32 +87,31 @@
                                 <div class="plan">
                                     <div class="jss311">
                                         <p class="p7">Comprehensive plan</p>
-                                        <p class="p8">for your Honda Activa</p>
+                                        <p id="p8" class="p8"></p>
                                     </div>
                                     <img src="../../images/details/bike.svg" alt="">
                                 </div>
                                 <div class="overview">
-                                    <div class="damage_premium">
-                                        <p>Own Damage Premium</p>
-                                        <div class="value"></div>
+                                    <div class="jssa">
+                                        <p class="p18">Own Damage Premium</p>
+                                        <div class="value">₹ 134</div>
                                     </div>
-                                    <div class="third_party_cover">
-                                        <p>Third Party cover</p>
-                                        <div class="value">
-                                        </div>
+                                    <div class="jssa">
+                                        <p class="p18">Third Party cover</p>
+                                        <div id="third_party_cover" class="value">₹ 2,256</div>
                                     </div>
-                                    <div class="net_premium">
-                                        <p>Net Premium</p>
-                                        <div class="value"></div>
+                                    <div class="jssa">
+                                        <p class="p18">Net Premium</p>
+                                        <div id="net_premium" class="value">₹ 2,390</div>
                                     </div>
-                                    <div class="gst">
-                                        <p>GST</p>
-                                        <div class="value"></div>
+                                    <div class="jssa">
+                                        <p class="p18">GST</p>
+                                        <div id="gst" class="value">₹ 430</div>
                                     </div>
                                 </div>
-                                <div class="total">
+                                <div class="jssa total">
                                     <p>Total</p>
-                                    <div class="total"></div>
+                                    <p id="total" class="total">₹ 2,820</p>
                                 </div>
                             </div>
                         </div>
@@ -121,29 +123,100 @@
 </body>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-    
-    function values() {
-        var name = document.getElementById("name").value
-    }
-    function name(params) {
-        
-    }
     var count = 0;
     function increase() {
         count++
     }
+
+    localStorage.setItem("bike_no", "DL45BN0731");
+    localStorage.setItem("model", "Honda Actiadava");
+    localStorage.setItem("Registration", "2ad009");
+    localStorage.setItem("Insured_Declared_Value", "15,04wd0");
+    localStorage.setItem("Policy_Start_Date", "May 30, 2wd022");
+    localStorage.setItem("net_premium", "2390");
+    var model = localStorage.getItem("model");
+    document.getElementById("p8").innerHTML = `for your ${model}`
+
+    var net_premium = parseInt(localStorage.getItem("net_premium"));
+    document.getElementById("net_premium").innerHTML = `₹ ${net_premium}`
+    document.getElementById("third_party_cover").innerHTML = `₹ ${net_premium - 124}`
+    var gst = Math.floor(net_premium / 6)
+    document.getElementById("gst").innerHTML = `₹ ${gst}`
+    var total = net_premium + gst
+    document.getElementById("total").innerHTML = `₹ ${total}`
+
+
+
+
+
+function values() {
+    var name = document.getElementById("name").value
+        localStorage.setItem("name", `${name}`);
+
+    var email = document.getElementById("email").value
+        localStorage.setItem("email", `${email}`);
+
+    var mobile = document.getElementById("mobile").value
+        localStorage.setItem("mobile", `${mobile}`);
+
+    var pincode = document.getElementById("pincode").value
+        localStorage.setItem("pincode", `${pincode}`);
+        var Name = localStorage.getItem("name");
+        console.log(Name);
+}
+
+        
+    
+
    async function solve() {
         document.getElementById("js2").style.background = "rgb(62, 183, 83)"
-        if (count == 5) {
+        if (count >= 5) {
             await values()
-            console.log("count")
+            console.log(count)
             count = 0
             swal("are you sure you want to continue payment")
                 .then((value) => {
                     resolve();
+
+                    var net_premium = parseInt(localStorage.getItem("net_premium"));
+                    document.getElementById("net_premium").innerHTML = `₹ ${net_premium}`
+                    document.getElementById("third_party_cover").innerHTML = `₹ ${net_premium - 124}`
+                    var gst = Math.floor(net_premium / 6)
+                    document.getElementById("gst").innerHTML = `₹ ${gst}`
+                    var total = net_premium + gst
+                    document.getElementById("total").innerHTML = `₹ ${total}`
+
+                    document.getElementById("total1").innerHTML = `₹ ${total}`
+                    var bike_no = localStorage.getItem("bike_no");
+                    document.getElementById("bike_no").innerHTML = bike_no
+
+                    var model = localStorage.getItem("model");
+                    document.getElementById("model").innerHTML = model
+
+                    var Registration = localStorage.getItem("Registration");
+                    document.getElementById("reg_year").innerHTML = Registration
+
+                    var Insured_Declared_Value = localStorage.getItem("Insured_Declared_Value");
+                    document.getElementById("insured_value").innerHTML = Insured_Declared_Value
+
+                    var Policy_Start_Date = localStorage.getItem("Policy_Start_Date");
+                    document.getElementById("policy_start_date").innerHTML = Policy_Start_Date
+
+                    var name = localStorage.getItem("name");
+                    document.getElementById("name").innerHTML = name
+
+                    var email = localStorage.getItem("email");
+                    document.getElementById("email").innerHTML = email
+
+                    var mobile = localStorage.getItem("mobile");
+                    document.getElementById("mobile").innerHTML = mobile
+
+                    var pincode = localStorage.getItem("pincode");
+                    document.getElementById("pincode").innerHTML = pincode
+
                 });
         } else {
-            console.log("count");
+            console.log(count);
             swal("Please provide all details", {
                 button: "ok",
             });
@@ -151,11 +224,261 @@
 
     }
     function resolve() {
-        
+
         document.getElementById("js3").style.background = "rgb(62, 183, 83)"
-        document.getElementById("details").innerHTML = ""
+        var main = document.getElementById("main")
+        main.innerHTML = ""
+        main.innerHTML = payment()
+    }
+    function payment() {
+        return `<div class="page">
+            <div class="container1">
+                <div class="container2">
+                    <div class="left">
+                        <div class="step1">
+                            <span class="span">
+                                <div class="jss1">1</div>
+                                <p class="p2">Enter details</p>
+                            </span>
+                            <span class="span">
+                                <div id="js2" class="jss1">2</div>
+                                <p class="p2">verify details</p>
+                            </span>
+                            <span class="span">
+                                <div id="js3" class="jss1">3</div>
+                                <p class="p2">Review & pay</p>
+                            </span>
+                        </div>
+                        <div id="details2" class="details2">
+                            <div class="p11">
+                                <p class="p11a">Please verify the details. All the information below will show up on your policy</p>
+                            </div>
+                            <div class="jss4a">
+                                <div class="jss5">
+                                    <div class="bike_detail">
+                                        <p class="p12">Bike Details</p>
+                                        <div class="jss6a">
+                                            <div class="jss61">
+                                                <p class="p13">Bike Number</p>
+                                                <p id="bike_no" class="p14">DL4SBN0731</p>
+                                            </div>
+                                            <div class="jss61">
+                                                <p class="p13">Make/Model</p>
+                                                <p id="model" class="p14">Honda Activa</p>
+                                            </div>
+                                            <div class="jss61">
+                                                <p class="p13">Registration Year</p>
+                                                <p id="reg_year" class="p14">2009</p>
+                                            </div>
+                                            <div class="jss61">
+                                                <p class="p13">Insured Declared Value</p>
+                                                <p id="insured_value" class="p14">₹ 15,040</p>
+                                            </div>
+                                            <div class="jss61">
+                                                <p class="p13">Policy Start Date</p>
+                                                <p id="policy_start_date" class="p14">May 30, 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jss6"></div>
+                                <div class="jss7">
+                                    <div class="jss5">
+                                        <div class="bike_detail">
+                                            <p class="p12">Bike Owner Details</p>
+                                            <div class="jss6a">
+                                                <div class="jss61">
+                                                    <p class="p13">Name</p>
+                                                    <p id="name" class="p14">Lucky Yadav</p>
+                                                </div>
+                                                <div class="jss61">
+                                                    <p class="p13">Email Address</p>
+                                                    <p id="email" class="p14">luckyyadav8627@gmail.com</p>
+                                                </div>
+                                                <div class="jss61">
+                                                    <p class="p13">Mobile Number</p>
+                                                    <p id="mobile" class="p14">9485949413</p>
+                                                </div>
+                                                <div class="jss61">
+                                                    <p class="p13">Pincode</p>
+                                                    <p id="pincode" class="p14">123001</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jss6"></div>
+                                <div class="jss9">
+                                    <div class="jss91">
+                                        <input type="checkbox" name="checkbox" class="checkbox"  id="">
+                                        <p class="p16">Get Policy on Whatsapp</p>
+                                    </div>
+                                    <img  src="../../images/details/whatsapp.jpg" alt="">
+                                </div>
+                                <div class="jss10">
+                                    <button id="total1" onclick="payment2()" class="pay">pay ₹2,820</button>
+                                    <div class="jss101">
+                                        <img src="../../images/details/like.jpg" alt="">
+                                        <p class="p17">Trusted by 4.5 Crore Indians</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="jss3">
+                            <div class="jss31">
+                                <div class="plan">
+                                    <div class="jss311">
+                                        <p class="p7">Comprehensive plan</p>
+                                        <p id="p8" class="p8"></p>
+                                    </div>
+                                    <img src="../../images/details/bike.svg" alt="">
+                                </div>
+                                <div class="overview">
+                                    <div class="jssa">
+                                        <p class="p18">Own Damage Premium</p>
+                                        <div class="value">₹ 134</div>
+                                    </div>
+                                    <div class="jssa">
+                                        <p class="p18">Third Party cover</p>
+                                        <div id="third_party_cover" class="value">₹ 2,256</div>
+                                    </div>
+                                    <div class="jssa">
+                                        <p class="p18">Net Premium</p>
+                                        <div id="net_premium" class="value">₹ 2,390</div>
+                                    </div>
+                                    <div class="jssa">
+                                        <p class="p18">GST</p>
+                                        <div id="gst" class="value">₹ 430</div>
+                                    </div>
+                                </div>
+                                <div class="jssa total">
+                                    <p>Total</p>
+                                    <p id="total" class="total">₹ 2,820</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     }
 
+</script>
+<script>
+    function payment2() {
+       var main = document.getElementById("main")
+       main.innerHTML = ``
+       main.innerHTML = solve()
+       function solve() {
+           return `
+
+<div class="jsa1">
+    <div class="jsa2">
+        <div class="jsa3">
+            <div class="jsa3a">
+                <div class="jsa3b">
+                    <div class="jsa3b1">
+                        <div class="jsb1">
+                            <img id="arrow" src="../../images/details/arrow.svg" alt="">
+                            <p class="pp1">UPI</p>
+                        </div>
+                        <div class="jsb1 jsb2">
+                            <img src="../../images/details/credit.svg" alt="">
+                            <p class="pp1">Credit / Debit Card</p>
+                        </div>
+                        <div class="jsb1 jsb3">
+                            <img src="../../images/details/net.svg" alt="">
+                            <p class="pp1">Netbanking</p>
+                        </div>
+                        <div class="jsb1 jsb4">
+                            <img src="../../images/details/wallet.svg" alt="">
+                            <p class="pp1">Wallets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="jsa3c">
+                    <div class="jsa3c1">
+                        <div class="js11">
+                            <p class="pp2">Scan QR and Pay</p>
+                            <p class="pp3">Scan the QR using any UPI app on your mobile phone like PhonePe,
+                                Paytm, GooglePay, BHIM etc.</p>
+                            <button id="qr6" class="qr">
+                                <p onclick="generateqr()" class="pp7">Generate QR Code</p>
+                            </button>
+                            <img id="qrcodeimg" alt="">
+                            <p class="pp4">Enter your UPI ID</p>
+                            <input oninput="paycolor()" class="input5" type="text" placeholder="e.g rakesh@upi">
+                            <p class="pp5">A collect request will be sent to this UPI ID</p>
+                            <button onclick="payment_complete()" id="pay_now3" class="pay_now">
+                                <p class="pp7">Pay Now</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jsa4">
+            <div class="jsa4a">
+                <div class="js4a">
+                    <p class="p26">Comprehensive plan</p>
+                    <p class="p27">For your Honda Activa</p>
+                </div>
+                <div class="js4b">
+                    <div class="bill_data">
+                        <div class="bill">
+                            <p class="p28">Net Premium</p>
+                            <p id="net_premium3" class="value3">₹ 2,390</p>
+                        </div>
+                        <div class="bill">
+                            <p class="p28">GST</p>
+                            <p id="gst3" class="value3">₹ 430</p>
+                        </div>
+                    </div>
+                    <div class="last">
+                        <div class=" total3">
+                            <p>Total</p>
+                            <p id="total" class="total">₹ 2,820</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`
+       }
+    }
+    function generateqr() {
+        document.getElementById("qrcodeimg").src = "../../images/details/qr code.jfif"
+
+    }
+    function paycolor() {
+        var img = document.getElementById("pay_now3").style.background = "#5E27C9";
+    }
+    function payment_complete() {
+
+        swal("We are Processing your Payment", {
+            buttons: ["ok"],
+        });
+        setTimeout(function () {
+            swal("Poof! Your payment has been completed!", {
+                icon: "success",
+                buttons: true,
+
+                
+            });
+            mainpage()
+        }, 2000);
+    }
+ function mainpage() {
+     setTimeout(function () {
+        document.getElementById("back").click()
+     },2000)
+ }
+function back() {
+    console.log(2);
+}
 </script>
 
 </html>
