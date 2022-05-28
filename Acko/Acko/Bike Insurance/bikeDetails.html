@@ -120,12 +120,10 @@
         }
 
         #mainContent>#bikeInfo>.bikeYear{
-            position: absolute;
-            top: 415px;
-            left: auto;
             display: grid;
             width: 25%;
             max-width: 400px;
+            min-width: 250px;
             margin-left: 130px;
             grid-template-columns: repeat(3,auto);
             background-color: white;
@@ -145,6 +143,16 @@
             border-radius: 7px;
             background-color:rgba(192, 185, 185, 0.279) ;
             cursor: pointer;
+        }
+        .bikeYear1{
+            position: absolute;
+            top: 415px;
+            left: auto;
+        }
+        .bikeYear2{
+            position: absolute;
+            top: 515px;
+            left: auto;
         }
         .false{
             border: 1px solid red;
@@ -173,11 +181,9 @@
             background-color: rgba(196, 189, 189, 0.279);
             padding: 5px;
             border-radius:4px;
+            cursor: pointer;
         }
         #mainContent>#bikeInfo>.bikeStatus{
-            position: absolute;
-            top: 455px;
-            left: auto;
             width: 20%;
             max-width: 400px;
             margin-left: 130px;
@@ -199,6 +205,16 @@
             cursor: pointer;
             border-radius: 2px;
             background-color: rgba(196, 190, 190, 0.251);
+        }
+        .bikeStatus1{
+            position: absolute;
+            top: 455px;
+            left: auto;
+        }
+        .bikeStatus2{
+            position: absolute;
+            top: 555px;
+            left: auto;
         }
         .selected{
             border: 1px solid rebeccapurple;
@@ -416,6 +432,11 @@
     var bikeYear = document.getElementById("bikeYear");
 
     function year(){
+        if(document.querySelector("#heading").innerText == "Here’s your bike"){
+            bikeYear.classList.add("bikeYear2")
+        }else{
+            bikeYear.classList.add("bikeYear1")
+        }
         bikeYear.classList.add("bikeYear")
         overlay.classList.add("active")
 
@@ -484,6 +505,8 @@
         console.log(e.target.innerText);
         document.getElementById("select1").innerHTML = e.target.innerText
         document.getElementById("bikeYear").classList.remove("bikeYear")
+        bikeYear.classList.remove("bikeYear1")
+        bikeYear.classList.remove("bikeYear2")
         document.getElementById("bikeYear").innerHTML = ""
         document.querySelector("#overlay").classList.remove("active");
         localStorage.setItem("Registration",e.target.innerText)
@@ -503,6 +526,11 @@
         var pol3 = document.createElement("div")
         pol3.innerText = "Expired more than 90 days ago"
 
+        if(document.querySelector("#heading").innerText == "Here’s your bike"){
+            document.querySelector("#bikeStatus").classList.add("bikeStatus2")
+        }else{
+            document.querySelector("#bikeStatus").classList.add("bikeStatus1")
+        }
         document.querySelector("#bikeStatus").classList.add("bikeStatus")
         document.querySelector("#bikeStatus").append(pol1,pol2,pol3)
     }
@@ -511,6 +539,8 @@
         console.log(e.target.innerText)
         document.getElementById("select2").innerHTML = e.target.innerText;
         document.querySelector("#bikeStatus").classList.remove("bikeStatus")
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus2")
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus1")
         document.querySelector("#bikeStatus").innerHTML = ""
         document.querySelector("#overlay").classList.remove("active");
         localStorage.setItem("PolicyPeriod",e.target.innerText)
@@ -538,9 +568,13 @@
 
 
         document.getElementById("bikeYear").classList.remove("bikeYear")
+        bikeYear.classList.remove("bikeYear1")
+        bikeYear.classList.remove("bikeYear2")
         document.getElementById("bikeYear").innerHTML = ""
 
         document.querySelector("#bikeStatus").classList.remove("bikeStatus")
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus2")
+        document.querySelector("#bikeStatus").classList.remove("bikeStatus1")
         document.querySelector("#bikeStatus").innerHTML = ""
     }
 </script>
