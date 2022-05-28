@@ -12,7 +12,7 @@
 
 <body>
     <div id="loginNav">
-        <a href="../../index/index.html"><img class="image9" src="../../Acko/Acko/Login/logo/acko_logo.jfif"></a>
+        <a id="index_redirect" href="../../index/index.html"><img class="image9" src="../../Acko/Acko/Login/logo/acko_logo.jfif"></a>
         
         <a>Help</a>
     </div>
@@ -135,11 +135,11 @@
     }
 
     localStorage.setItem("bike_no", "DL45BN0731");
-    localStorage.setItem("model", "Honda Actiadava");
-    localStorage.setItem("Registration", "2ad009");
-    localStorage.setItem("Insured_Declared_Value", "15,04wd0");
-    localStorage.setItem("Policy_Start_Date", "May 30, 2wd022");
-    localStorage.setItem("net_premium", "2390");
+    localStorage.setItem("model", "Honda Activa");
+    localStorage.setItem("Registration", "2010");
+    localStorage.setItem("Insured_Declared_Value", "15,029");
+    localStorage.setItem("Policy_Start_Date", "May 30, 2022");
+    localStorage.setItem("net_premium", "2222");
     var model = localStorage.getItem("model");
     document.getElementById("p8").innerHTML = `for your ${model}`
 
@@ -479,7 +479,7 @@ function values() {
     }
  function mainpage() {
      setTimeout(function () {
-        document.getElementById("back").click() 
+        document.getElementById("index_redirect").click()
      },2000)
  }
 function back() {
