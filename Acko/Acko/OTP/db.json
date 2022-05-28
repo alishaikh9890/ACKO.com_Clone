@@ -5,7 +5,6 @@
       "first_name": "Berrie",
       "last_name": "Coare",
       "email": "bcoare0@telegraph.co.uk",
-      "otp": "0313",
       "isLogin": false,
       "number": "5552828558"
     },
@@ -14,7 +13,6 @@
       "first_name": "Issi",
       "last_name": "Pinfold",
       "email": "ipinfold1@skype.com",
-      "otp": "9663",
       "isLogin": false,
       "number": "5155469950"
     },
@@ -23,7 +21,6 @@
       "first_name": "Phylys",
       "last_name": "Wann",
       "email": "pwann7@deliciousdays.com",
-      "otp": "4353",
       "isLogin": false,
       "number": "9806349448"
     },
@@ -32,7 +29,6 @@
       "first_name": "Gerda",
       "last_name": "Gulliman",
       "email": "ggulliman8@arizona.edu",
-      "otp": "1828",
       "isLogin": false,
       "number": "8026774076"
     },
@@ -41,7 +37,6 @@
       "first_name": "Marci",
       "last_name": "Fairebrother",
       "email": "mfairebrother9@ihg.com",
-      "otp": "3036",
       "isLogin": false,
       "number": "1272123582"
     },
@@ -49,55 +44,33 @@
       "first_name": "",
       "last_name": "",
       "email": "",
-      "otp": 1803,
       "isLogin": false,
-      "number": "9826041118",
+      "number": "9999999999",
       "id": 6
     },
     {
       "first_name": "",
       "last_name": "",
       "email": "",
-      "otp": 9915,
       "isLogin": false,
-      "number": "9691363755",
+      "number": "9826041118",
       "id": 7
     },
     {
       "first_name": "",
       "last_name": "",
       "email": "",
-      "otp": 6843,
       "isLogin": false,
-      "number": "9826041118",
+      "number": "7000000000",
       "id": 8
     },
     {
       "first_name": "",
       "last_name": "",
       "email": "",
-      "otp": 471,
-      "isLogin": false,
-      "number": "9691363755",
-      "id": 9
-    },
-    {
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "otp": 7428,
-      "isLogin": false,
-      "number": "1272123582",
-      "id": 10
-    },
-    {
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "otp": 7753,
       "isLogin": true,
-      "number": "9999999999",
-      "id": 11
+      "number": "8888888888",
+      "id": 9
     }
   ]
 }
