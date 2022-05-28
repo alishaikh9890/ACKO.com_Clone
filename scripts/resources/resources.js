@@ -179,6 +179,7 @@ function load_resources() {
     <div class="right jss5">></div>
     </div>`
     }
+
     colora()
 }
 function load_guides() {
@@ -2181,6 +2182,7 @@ function colorc() {
     document.getElementById("jss24").style.background = ""
     document.getElementById("jss24").style.color = ""
 }
+
 function colord() {
     document.getElementById("jss21").style.background = ""
     document.getElementById("jss21").style.color = ""
