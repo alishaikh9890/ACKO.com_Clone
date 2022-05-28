@@ -2,6 +2,9 @@ body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.anchor_tag {
+    text-decoration: none;
+}
 @media (min-width: 768px)  {
     #main{
         background-color: rgb(94, 39, 201);
@@ -17,6 +20,12 @@ body{
         left:25%;
         color: black;
     }
+    .row {
+        gap: 20px;
+    }
+    .column {
+        margin-right: 20px;
+    }
     #invisible li{
         margin-top: 20px;
         margin-left: 0%;
@@ -29,8 +38,9 @@ body{
         display:none;
         background-color: white;
         border-radius: 15px;
-        height: 170px;
-        width:250px;
+        padding: 15px;
+        height: auto;
+        width:auto;
         position: absolute;
         left:15%;
         color: black;

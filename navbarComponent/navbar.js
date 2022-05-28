@@ -10,7 +10,7 @@ function navbar(){
     <div class = "logIn">
     <i class="fa fa-file-text" style="color:white"></i>
     <span>Claim, edit, renew & more</span>
-    <button>Login &nbsp;<i class="arrow down"></i></button>
+    <button> <a href="../Acko/Acko/Login/login.html">Login</a>  &nbsp;<i class="arrow down"></i></button>
     </div>
     <span class = "help">Help</span>
     </div>
